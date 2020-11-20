@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
-using HtmlAgilityPack;
 using KonusarakOgren.Business.Abstract;
 using KonusarakOgren.Entity.Abstract;
 using KonusarakOgren.Entity.Entities;
 using KonusarakOgren.Model.Exam.Request;
 using KonusarakOgren.ModelMapper.Exam;
-using KonusarakOgren.WebUI.Models;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KonusarakOgren.WebUI.Controllers

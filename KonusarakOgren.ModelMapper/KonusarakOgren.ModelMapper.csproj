@@ -7,6 +7,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\KonusarakOgren.DTO\KonusarakOgren.DTO.csproj" />
+      <ProjectReference Include="..\KonusarakOgren.Entity\KonusarakOgren.Entity.csproj" />
       <ProjectReference Include="..\KonusarakOgren.Model\KonusarakOgren.Model.csproj" />
     </ItemGroup>
 

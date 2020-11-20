@@ -411,6 +411,9 @@
               "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj": {
                 "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj"
               },
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj"
+              },
               "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj": {
                 "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj"
               }
@@ -471,6 +474,9 @@
             "projectReferences": {
               "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj": {
                 "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj"
+              },
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj"
               }
             }
           }
@@ -538,6 +544,12 @@
               },
               "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj": {
                 "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj"
+              },
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\KonusarakOgren.ModelMapper.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\KonusarakOgren.ModelMapper.csproj"
+              },
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj"
               }
             }
           }

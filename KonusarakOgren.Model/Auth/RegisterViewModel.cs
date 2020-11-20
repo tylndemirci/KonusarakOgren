@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace KonusarakOgren.Model.Models
+namespace KonusarakOgren.Model.Auth
 {
     public class RegisterViewModel
     {

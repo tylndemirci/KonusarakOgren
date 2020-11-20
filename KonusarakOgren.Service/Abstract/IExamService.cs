@@ -1,10 +1,18 @@
-﻿using KonusarakOgren.Core;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using KonusarakOgren.Core;
 using KonusarakOgren.DTO.Exam;
+using KonusarakOgren.DTO.Exam.Response;
+using KonusarakOgren.Entity.Entities;
 
 namespace KonusarakOgren.Service.Abstract
 {
     public interface IExamService
     {
         ServiceResult CreateExam(ExamCreateRequestDto createRequestDto);
+        ServiceResult DeleteExam(int examId);
+        ServiceResult<List<ExamGetResponseDto>> GetAll();
+        ServiceResult<List<ExamGetResponseDto>> GetBy(Expression<Func<Exam, bool>> predicate);
     }
 }

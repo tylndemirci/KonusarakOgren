@@ -1,7 +1,6 @@
-﻿
-using Microsoft.Build.Framework;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace KonusarakOgren.Model.Models
+namespace KonusarakOgren.Model.Auth
 {
     public class LoginViewModel
     {

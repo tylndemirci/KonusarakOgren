@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using KonusarakOgren.Entity.Entities;
 
-namespace KonusarakOgren.Model.Models
+namespace KonusarakOgren.Model.Exam
 {
     public class CreateExamViewModel
     {

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using KonusarakOgren.Business.Abstract;
-using KonusarakOgren.WebUI.Models;
+﻿using KonusarakOgren.Business.Abstract;
+using KonusarakOgren.Model.Auth;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace KonusarakOgren.WebUI.Controllers
 {

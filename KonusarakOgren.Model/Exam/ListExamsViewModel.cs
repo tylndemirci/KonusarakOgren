@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using KonusarakOgren.Entity.Entities;
-
-namespace KonusarakOgren.Model.Models
+﻿namespace KonusarakOgren.Model.Exam
 {
     public class ListExamsViewModel
     {
-        public ListExamsViewModel(Exam exam)
+        public ListExamsViewModel(Entity.Entities.Exam exam)
         {
             Id = exam.Id;
             Title = exam.Title;

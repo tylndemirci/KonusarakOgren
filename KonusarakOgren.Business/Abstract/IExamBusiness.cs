@@ -9,10 +9,13 @@ namespace KonusarakOgren.Business.Abstract
 {
     public interface IExamBusiness
     {
-        public ExamCreateResponseModel CreateExam(ExamCreateRequestModel model);
-        public void DeleteExam(int examId);
-        
-        
-        public Task<ScrapeWiredComResponseModel> ScrapeWiredCom();
+        ExamCreateResponseModel CreateExam(ExamCreateRequestModel model);
+        ExamDeleteResponseModel DeleteExam(int examId);
+
+        ExamGetResponseModel GetAllExams();
+        ExamGetByResponseModel GetByExams();
+
+
+        Task<ScrapeWiredComResponseModel> ScrapeWiredCom();
     }
 }
