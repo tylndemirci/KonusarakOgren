@@ -28,11 +28,23 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Core\\KonusarakOgren.Core.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Core\\KonusarakOgren.Core.csproj"
+              },
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj"
+              },
               "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj": {
                 "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj"
               },
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\KonusarakOgren.ModelMapper.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\KonusarakOgren.ModelMapper.csproj"
+              },
               "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj": {
                 "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj"
+              },
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Service\\KonusarakOgren.Service.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Service\\KonusarakOgren.Service.csproj"
               }
             }
           }
@@ -107,6 +119,121 @@
         }
       }
     },
+    "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Core\\KonusarakOgren.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Core\\KonusarakOgren.Core.csproj",
+        "projectName": "KonusarakOgren.Core",
+        "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Core\\KonusarakOgren.Core.csproj",
+        "packagesPath": "C:\\Users\\t4yl4\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\t4yl4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DtoMapper\\KonusarakOgren.DtoMapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DtoMapper\\KonusarakOgren.DtoMapper.csproj",
+        "projectName": "KonusarakOgren.DtoMapper",
+        "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DtoMapper\\KonusarakOgren.DtoMapper.csproj",
+        "packagesPath": "C:\\Users\\t4yl4\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DtoMapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\t4yl4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj"
+              },
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -121,15 +248,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net472"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net472": {
-            "targetAlias": "net472",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -140,8 +267,23 @@
         }
       },
       "frameworks": {
-        "net472": {
-          "targetAlias": "net472",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
@@ -256,16 +398,19 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net472"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net472": {
-            "targetAlias": "net472",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj"
+              },
               "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj": {
                 "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj"
               }
@@ -279,8 +424,23 @@
         }
       },
       "frameworks": {
-        "net472": {
-          "targetAlias": "net472",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
@@ -299,15 +459,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net472"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net472": {
-            "targetAlias": "net472",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
               "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj": {
                 "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj"
@@ -322,8 +482,90 @@
         }
       },
       "frameworks": {
-        "net472": {
-          "targetAlias": "net472",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Service\\KonusarakOgren.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Service\\KonusarakOgren.Service.csproj",
+        "projectName": "KonusarakOgren.Service",
+        "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Service\\KonusarakOgren.Service.csproj",
+        "packagesPath": "C:\\Users\\t4yl4\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\t4yl4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Core\\KonusarakOgren.Core.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Core\\KonusarakOgren.Core.csproj"
+              },
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DtoMapper\\KonusarakOgren.DtoMapper.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DtoMapper\\KonusarakOgren.DtoMapper.csproj"
+              },
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj"
+              },
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }

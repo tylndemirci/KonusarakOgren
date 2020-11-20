@@ -6,6 +6,7 @@ using HtmlAgilityPack;
 using KonusarakOgren.Business.Abstract;
 using KonusarakOgren.Entity.Abstract;
 using KonusarakOgren.Entity.Entities;
+using KonusarakOgren.Model.Exam.Request;
 using KonusarakOgren.ModelMapper.Exam;
 using KonusarakOgren.WebUI.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -41,12 +42,10 @@ namespace KonusarakOgren.WebUI.Controllers
         }
 
         [HttpGet]
-        public IActionResult CreateExam(string title, string content)
+        public IActionResult CreateExam(ExamCreateRequestModel model)
         {
-            var returnModel = new CreateExamViewModel();
-            returnModel.Title = title;
-            returnModel.Content = content;
-            return View(returnModel);
+           var result = _examBusiness.CreateExam(model);
+            return View(result);
         }
 
         [HttpPost]
@@ -59,7 +58,7 @@ namespace KonusarakOgren.WebUI.Controllers
                 returnExam.Content = model.Content;
                 returnExam.ExamQuestions = model.ExamQuestions;
                 returnExam.DateTime = DateTime.Now.ToString("yyyy-MM-dd");
-                _examBusiness.CreateExam(returnExam);
+                _examBusiness.CreateExam(TODO);
                 return RedirectToAction("ListExams", "Exam");
             }
 

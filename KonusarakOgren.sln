@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonusarakOgren.Model", "Kon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonusarakOgren.DTO", "KonusarakOgren.DTO\KonusarakOgren.DTO.csproj", "{7F86C8CA-B31D-4DFF-9A36-9C5D3E3D873B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonusarakOgren.Service", "KonusarakOgren.Service\KonusarakOgren.Service.csproj", "{CD0F5C0B-6CDC-448C-AFD0-0CAE56AEBA66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonusarakOgren.Core", "KonusarakOgren.Core\KonusarakOgren.Core.csproj", "{8A272EB1-F342-4A0F-A596-C63DFC947C02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonusarakOgren.DtoMapper", "KonusarakOgren.DtoMapper\KonusarakOgren.DtoMapper.csproj", "{8ED43670-F4CD-4D33-982E-AAD27E11F2BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +51,18 @@ Global
 		{7F86C8CA-B31D-4DFF-9A36-9C5D3E3D873B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F86C8CA-B31D-4DFF-9A36-9C5D3E3D873B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F86C8CA-B31D-4DFF-9A36-9C5D3E3D873B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD0F5C0B-6CDC-448C-AFD0-0CAE56AEBA66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0F5C0B-6CDC-448C-AFD0-0CAE56AEBA66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0F5C0B-6CDC-448C-AFD0-0CAE56AEBA66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0F5C0B-6CDC-448C-AFD0-0CAE56AEBA66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A272EB1-F342-4A0F-A596-C63DFC947C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A272EB1-F342-4A0F-A596-C63DFC947C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A272EB1-F342-4A0F-A596-C63DFC947C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A272EB1-F342-4A0F-A596-C63DFC947C02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ED43670-F4CD-4D33-982E-AAD27E11F2BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED43670-F4CD-4D33-982E-AAD27E11F2BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED43670-F4CD-4D33-982E-AAD27E11F2BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED43670-F4CD-4D33-982E-AAD27E11F2BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

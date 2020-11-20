@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+using Microsoft.Build.Framework;
 
 namespace KonusarakOgren.Model.Models
 {

@@ -2,11 +2,11 @@
 
 namespace KonusarakOgren.DTO.Exam
 {
-    public class ExamDto
+    public class ExamCreateRequestDto
     {
         public string Title { get; set; }
         public string Content { get; set; }
-        public List<ExamQuestionDto> ExamQuestions { get; set; }
-        public string Answer { get; set; }
+        public List<ExamQuestionCreateRequestDto> ExamQuestions { get; set; }
+        public string DateTime { get; set; }
     }
 }

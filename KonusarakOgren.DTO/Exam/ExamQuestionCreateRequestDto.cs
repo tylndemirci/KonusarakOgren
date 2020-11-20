@@ -1,6 +1,6 @@
 ﻿namespace KonusarakOgren.DTO.Exam
 {
-    public class ExamQuestionDto
+    public class ExamQuestionCreateRequestDto
     {
         public string Question { get; set; }
         public string OptionA { get; set; }

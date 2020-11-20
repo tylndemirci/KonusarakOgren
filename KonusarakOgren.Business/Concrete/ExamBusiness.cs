@@ -7,59 +7,36 @@ using HtmlAgilityPack;
 using KonusarakOgren.Business.Abstract;
 using KonusarakOgren.Entity.Abstract;
 using KonusarakOgren.Entity.Entities;
+using KonusarakOgren.Model.Exam.Request;
 using KonusarakOgren.Model.Exam.Response;
+using KonusarakOgren.ModelMapper.Exam;
+using KonusarakOgren.Service.Abstract;
 
 namespace KonusarakOgren.Business.Concrete
 {
-    public class ExamBusiness : IExamBusiness
+    public partial class ExamBusiness : IExamBusiness
     {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly IGenericDal<Exam> _examDal;
-        private readonly IGenericDal<ExamQuestion> _examQuestionDal;
+        private readonly IExamService _examService;
 
-        public ExamBusiness(IUnitOfWork unitOfWork, IGenericDal<Exam> examDal, IGenericDal<ExamQuestion> examQuestionDal)
+        public ExamBusiness(IExamService examService)
         {
-            _unitOfWork = unitOfWork;
-            _examDal = examDal;
-            _examQuestionDal = examQuestionDal;
+            _examService = examService;
         }
 
-        public void CreateExam(Exam exam)
+        public ExamCreateResponseModel CreateExam(ExamCreateRequestModel model)
         {
-            
-            
-            var createExam = new Exam
-            {
-                Title = exam.Title,
-                Content = exam.Content,
-                ExamQuestions = exam.ExamQuestions,
-                DateTime = exam.DateTime
-            };
+            CreateExamValidation(model);
 
-            _examDal.Create(createExam);
-            _unitOfWork.SaveChanges();
-
-            foreach (var questionModel in exam.ExamQuestions.ToList())
-            {
-                var question = new ExamQuestion();
-                question.Exam = createExam;
-                question.Question = questionModel.Question;
-                question.OptionA = questionModel.OptionA;
-                question.OptionB = questionModel.OptionB;
-                question.OptionC = questionModel.OptionC;
-                question.OptionD = questionModel.OptionD;
-                question.Answer = questionModel.Answer;
-                _examQuestionDal.Create(question);
-            }
-
-            _unitOfWork.SaveChanges();
+            var createExam = model.MapToDto();
+          var result = _examService.CreateExam(createExam);
+          return new ExamCreateResponseModel() {Success = result.Success};
         }
 
         public void DeleteExam(int examId)
         {
             var exam = _examDal.GetBy(x => x.Id == examId).FirstOrDefault();
             if (exam != null) exam.IsDeleted = true;
-            _unitOfWork.SaveChanges();
+            
         }
 
         public async Task<ScrapeWiredComResponseModel> ScrapeWiredCom()

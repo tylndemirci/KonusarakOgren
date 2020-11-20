@@ -2091,8 +2091,12 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "HtmlAgilityPack": "1.11.28",
+          "KonusarakOgren.Core": "1.0.0",
+          "KonusarakOgren.DTO": "1.0.0",
           "KonusarakOgren.Entity": "1.0.0",
           "KonusarakOgren.Model": "1.0.0",
+          "KonusarakOgren.ModelMapper": "1.0.0",
+          "KonusarakOgren.Service": "1.0.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.0",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.0",
@@ -2105,6 +2109,40 @@
         },
         "runtime": {
           "bin/placeholder/KonusarakOgren.Business.dll": {}
+        }
+      },
+      "KonusarakOgren.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/KonusarakOgren.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KonusarakOgren.Core.dll": {}
+        }
+      },
+      "KonusarakOgren.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/KonusarakOgren.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KonusarakOgren.DTO.dll": {}
+        }
+      },
+      "KonusarakOgren.DtoMapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "KonusarakOgren.DTO": "1.0.0",
+          "KonusarakOgren.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KonusarakOgren.DtoMapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KonusarakOgren.DtoMapper.dll": {}
         }
       },
       "KonusarakOgren.Entity/1.0.0": {
@@ -2128,7 +2166,10 @@
       },
       "KonusarakOgren.Model/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7.2",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "KonusarakOgren.DTO": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/KonusarakOgren.Model.dll": {}
         },
@@ -2138,12 +2179,32 @@
       },
       "KonusarakOgren.ModelMapper/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7.2",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "KonusarakOgren.DTO": "1.0.0",
+          "KonusarakOgren.Model": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/KonusarakOgren.ModelMapper.dll": {}
         },
         "runtime": {
           "bin/placeholder/KonusarakOgren.ModelMapper.dll": {}
+        }
+      },
+      "KonusarakOgren.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "KonusarakOgren.Core": "1.0.0",
+          "KonusarakOgren.DTO": "1.0.0",
+          "KonusarakOgren.DtoMapper": "1.0.0",
+          "KonusarakOgren.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KonusarakOgren.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KonusarakOgren.Service.dll": {}
         }
       }
     }
@@ -7119,6 +7180,21 @@
       "path": "../KonusarakOgren.Business/KonusarakOgren.Business.csproj",
       "msbuildProject": "../KonusarakOgren.Business/KonusarakOgren.Business.csproj"
     },
+    "KonusarakOgren.Core/1.0.0": {
+      "type": "project",
+      "path": "../KonusarakOgren.Core/KonusarakOgren.Core.csproj",
+      "msbuildProject": "../KonusarakOgren.Core/KonusarakOgren.Core.csproj"
+    },
+    "KonusarakOgren.DTO/1.0.0": {
+      "type": "project",
+      "path": "../KonusarakOgren.DTO/KonusarakOgren.DTO.csproj",
+      "msbuildProject": "../KonusarakOgren.DTO/KonusarakOgren.DTO.csproj"
+    },
+    "KonusarakOgren.DtoMapper/1.0.0": {
+      "type": "project",
+      "path": "../KonusarakOgren.DtoMapper/KonusarakOgren.DtoMapper.csproj",
+      "msbuildProject": "../KonusarakOgren.DtoMapper/KonusarakOgren.DtoMapper.csproj"
+    },
     "KonusarakOgren.Entity/1.0.0": {
       "type": "project",
       "path": "../KonusarakOgren.Entity/KonusarakOgren.Entity.csproj",
@@ -7133,6 +7209,11 @@
       "type": "project",
       "path": "../KonusarakOgren.ModelMapper/KonusarakOgren.ModelMapper.csproj",
       "msbuildProject": "../KonusarakOgren.ModelMapper/KonusarakOgren.ModelMapper.csproj"
+    },
+    "KonusarakOgren.Service/1.0.0": {
+      "type": "project",
+      "path": "../KonusarakOgren.Service/KonusarakOgren.Service.csproj",
+      "msbuildProject": "../KonusarakOgren.Service/KonusarakOgren.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {

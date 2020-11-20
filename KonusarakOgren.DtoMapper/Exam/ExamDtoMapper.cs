@@ -1,27 +1,28 @@
 ﻿using System.Linq;
 using KonusarakOgren.DTO.Exam;
-using KonusarakOgren.Model.Exam.Request;
+using KonusarakOgren.Entity.Entities;
 
-namespace KonusarakOgren.ModelMapper.Exam
+namespace KonusarakOgren.DtoMapper.Exam
 {
-    public static class ExamModelMapper
+    public static class ExamDtoMapper
     {
-        public static ExamCreateRequestDto MapToDto(this ExamCreateRequestModel model)
+
+        public static Entity.Entities.Exam MapToEntity(this ExamCreateRequestDto model)
         {
             if (model == null) return null;
-            return new ExamCreateRequestDto
+            return new Entity.Entities.Exam
             {
                 Title = model.Title,
                 Content = model.Content,
-                ExamQuestions = model.ExamQuestions.Select(x=>x.MapToDto()).ToList(),
+                ExamQuestions = model.ExamQuestions.Select(x=>x.MapToEntity()).ToList(),
                 DateTime = model.DateTime
             };
         }
         
-        public static ExamQuestionCreateRequestDto MapToDto(this ExamQuestionCreateRequestModel model)
+        public static ExamQuestion MapToEntity(this ExamQuestionCreateRequestDto model)
         {
             if (model == null) return null;
-            return new ExamQuestionCreateRequestDto
+            return new ExamQuestion
             {
                 Question = model.Question,
                 OptionA = model.OptionA,
@@ -32,6 +33,5 @@ namespace KonusarakOgren.ModelMapper.Exam
                 
             };
         }
-
     }
 }
