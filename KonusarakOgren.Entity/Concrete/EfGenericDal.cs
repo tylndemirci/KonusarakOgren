@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using KonusarakOgren.Entity.Abstract;
@@ -24,12 +25,21 @@ namespace KonusarakOgren.Entity.Concrete
         {
             return _context.Set<T>().Where(predicate);
         }
-    
-        public void Create(T entity)
+
+        public T Create(T entity)
         {
             _context.Entry(entity).State = EntityState.Added;
-        }    
-        
+            return entity;
+        }
+
+        public void CreateGroup(List<T> entities)
+        {
+            foreach (var entity in entities)
+            {
+                _context.Entry(entity).State = EntityState.Added;
+            }
+        }
+
 
         public void Update(T entity)
         {

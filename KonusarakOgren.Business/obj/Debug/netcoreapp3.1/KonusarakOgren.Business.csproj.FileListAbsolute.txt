@@ -13,3 +13,15 @@ C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\obj\Debug\net
 C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.Business.runtimeconfig.json
 C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.Business.runtimeconfig.dev.json
 C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\obj\Debug\netcoreapp3.1\KonusarakOgren.Business.genruntimeconfig.cache
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.Core.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.DTO.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.DtoMapper.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.Model.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.ModelMapper.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.Service.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.Core.pdb
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.DTO.pdb
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.ModelMapper.pdb
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.Model.pdb
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.Service.pdb
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.DtoMapper.pdb

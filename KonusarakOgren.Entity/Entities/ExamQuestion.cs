@@ -12,6 +12,8 @@ namespace KonusarakOgren.Entity.Entities
         public string OptionD { get; set; }
 
         public string Answer { get; set; }
+        
         public virtual Exam Exam { get; set; }
+        public int ExamId { get; set; }
     }
 }

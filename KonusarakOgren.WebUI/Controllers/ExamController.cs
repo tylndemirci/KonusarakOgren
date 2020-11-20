@@ -3,6 +3,7 @@ using System.Linq;
 using KonusarakOgren.Business.Abstract;
 using KonusarakOgren.Entity.Abstract;
 using KonusarakOgren.Entity.Entities;
+using KonusarakOgren.Model.Exam;
 using KonusarakOgren.Model.Exam.Request;
 using KonusarakOgren.ModelMapper.Exam;
 using Microsoft.AspNetCore.Mvc;
@@ -12,48 +13,41 @@ namespace KonusarakOgren.WebUI.Controllers
     public class ExamController : Controller
     {
         private readonly IExamBusiness _examBusiness;
-        private readonly IGenericDal<Exam> _examDal;
 
-        public ExamController(IGenericDal<Exam> examDal, IExamBusiness examBusiness)
+        public ExamController(IExamBusiness examBusiness)
         {
-            _examDal = examDal;
             _examBusiness = examBusiness;
         }
 
 
         public IActionResult ExamGenerator()
         {
-            var articles = _examBusiness.ScrapeWiredCom().GetAwaiter().GetResult();
+            var articles = _examBusiness.ScrapeWiredCom()
+                .GetAwaiter()
+                .GetResult();
             
-            return View(articles.MapToModel());
+            return View(articles);
         }
         
         public IActionResult ListExams()
         {
-            var exams = _examDal.GetAll()
-                .Where(x => x.IsDeleted == false)
-                .Select(x=> new ListExamsViewModel(x));
+            var exams = _examBusiness.GetAllExams();
             return View(exams);
         }
 
         [HttpGet]
-        public IActionResult CreateExam(ExamCreateRequestModel model)
+        public IActionResult CreateExam(CreateExamViewModel model)
         {
-           var result = _examBusiness.CreateExam(model);
-            return View(result);
+            var returnModel = model.MapToModel();
+            return View(returnModel);
         }
 
         [HttpPost]
-        public IActionResult CreateExam(CreateExamViewModel model)
+        public IActionResult CreateExam(ExamCreateRequestModel model)
         {
             if (ModelState.IsValid)
             {
-                var returnExam = new Exam();
-                returnExam.Title = model.Title;
-                returnExam.Content = model.Content;
-                returnExam.ExamQuestions = model.ExamQuestions;
-                returnExam.DateTime = DateTime.Now.ToString("yyyy-MM-dd");
-                _examBusiness.CreateExam(TODO);
+                _examBusiness.CreateExam(model);
                 return RedirectToAction("ListExams", "Exam");
             }
 
@@ -61,9 +55,10 @@ namespace KonusarakOgren.WebUI.Controllers
             return View(model);
         }
 
-        [HttpPost]
+      
         public IActionResult DeleteExam(int examId)
         {
+            var sa = 1;
             _examBusiness.DeleteExam(examId);
             
             return RedirectToAction("ListExams", "Exam");

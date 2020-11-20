@@ -1,12 +1,12 @@
-﻿@model KonusarakOgren.WebUI.Models.CreateExamViewModel
+﻿@model KonusarakOgren.Model.Exam.Request.ExamCreateRequestModel
 <div class="container mt-5">
 <form asp-controller="Exam" asp-action="CreateExam" method="post">
 <div class="row border border-dark rounded">
-    @Html.Hidden("title", Model.Title)
+      @Html.HiddenFor(x=>x.Title)
     <p class="mb-auto mt-auto p-2 ml-3">@Model.Title</p>
 </div>
 <div class="row border border-dark mt-3 rounded">
-    @Html.Hidden("content", Model.Content)
+    @Html.HiddenFor(x=>x.Content)
     <p class="mb-auto mt-auto p-2 ml-3">
         @Model.Content
     </p>

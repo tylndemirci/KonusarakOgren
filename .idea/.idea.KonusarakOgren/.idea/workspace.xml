@@ -4,47 +4,148 @@
     <projectFile>KonusarakOgren.WebUI/KonusarakOgren.WebUI.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33d6e51d-7bc3-4869-ae86-f1519003d1db" name="Default Changelist" comment="createExam commit">
-      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamGetResponseDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamQuestionGetAllResponseDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamQuestionResponseDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamDeleteResponseModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamGetAllResponseModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamGetByResponseModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamQuestionResponseModel.cs" afterDir="false" />
+    <list default="true" id="33d6e51d-7bc3-4869-ae86-f1519003d1db" name="Default Changelist" comment="ExamService is done">
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/KonusarakOgren.Core.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/Utilities/Result/BaseResultModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/obj/Debug/net472/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/obj/Debug/net472/KonusarakOgren.Core.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/obj/Debug/net472/KonusarakOgren.Core.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/obj/Debug/netcoreapp3.1/KonusarakOgren.Core.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/obj/Debug/netcoreapp3.1/KonusarakOgren.Core.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/obj/Debug/netcoreapp3.1/KonusarakOgren.Core.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/obj/Debug/netcoreapp3.1/KonusarakOgren.Core.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/obj/KonusarakOgren.Core.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/obj/KonusarakOgren.Core.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/obj/KonusarakOgren.Core.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Core/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamCreateResponseDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/KonusarakOgren.DtoMapper.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/Debug/net472/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/Debug/net472/KonusarakOgren.DtoMapper.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/Debug/net472/KonusarakOgren.DtoMapper.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/Debug/net472/KonusarakOgren.DtoMapper.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/Debug/netcoreapp3.1/KonusarakOgren.DtoMapper.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/Debug/netcoreapp3.1/KonusarakOgren.DtoMapper.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/Debug/netcoreapp3.1/KonusarakOgren.DtoMapper.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/Debug/netcoreapp3.1/KonusarakOgren.DtoMapper.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/KonusarakOgren.DtoMapper.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/KonusarakOgren.DtoMapper.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/KonusarakOgren.DtoMapper.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/ExamQuestionViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Request/ExamQuestionRequestModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamQuestionCreateResponseDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/KonusarakOgren.Service.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/Debug/net472/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/Debug/net472/KonusarakOgren.Service.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/Debug/net472/KonusarakOgren.Service.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/Debug/net472/KonusarakOgren.Service.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/Debug/netcoreapp3.1/KonusarakOgren.Service.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/Debug/netcoreapp3.1/KonusarakOgren.Service.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/Debug/netcoreapp3.1/KonusarakOgren.Service.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/Debug/netcoreapp3.1/KonusarakOgren.Service.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/KonusarakOgren.Service.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/KonusarakOgren.Service.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/KonusarakOgren.Service.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KonusarakOgren/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KonusarakOgren/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KonusarakOgren/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KonusarakOgren/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/Abstract/IExamBusiness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/Abstract/IExamBusiness.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/ExamBusiness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/ExamBusiness.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/ExamBusinessValidation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/ExamBusinessValidation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/obj/KonusarakOgren.Business.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/obj/KonusarakOgren.Business.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.Core/ServiceResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Core/Utilities/Result/ServiceResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/ExamQuestionCreateRequestDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/ExamQuestionCreateRequestDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamGetResponseDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamGetResponseDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamQuestionResponseDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamQuestionResponseDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.DTO/KonusarakOgren.DTO.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.DTO/KonusarakOgren.DTO.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.DTO/obj/KonusarakOgren.DTO.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.DTO/obj/KonusarakOgren.DTO.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.DTO/obj/KonusarakOgren.DTO.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.DTO/obj/KonusarakOgren.DTO.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.DTO/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.DTO/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.DTO/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.DTO/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.DTO/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.DTO/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/Exam/ExamDtoMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/Exam/ExamDtoMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/Auth/LoginViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Auth/LoginViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/Auth/RegisterViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Auth/RegisterViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Entity/Abstract/IGenericDal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Entity/Abstract/IGenericDal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Entity/Concrete/EfGenericDal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Entity/Concrete/EfGenericDal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Entity/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Entity/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Entity/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Entity/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Entity/obj/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Entity/obj/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Entity/obj/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Entity/obj/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/CreateExamViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/CreateExamViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/ListExamsViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/ListExamsViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Request/ExamCreateRequestModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Request/ExamCreateRequestModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Request/ExamQuestionCreateRequestModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Request/ExamQuestionCreateRequestModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamCreateResponseModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamCreateResponseModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamGetAllResponseModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamGetAllResponseModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamGetByResponseModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamGetResponseModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamQuestionResponseModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamQuestionResponseModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/KonusarakOgren.Model.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/KonusarakOgren.Model.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/obj/KonusarakOgren.Model.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/obj/KonusarakOgren.Model.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/obj/KonusarakOgren.Model.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/obj/KonusarakOgren.Model.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.Model/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Model/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Exam/ExamModelMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Exam/ExamModelMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Exam/ExamGeneratorModelMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Exam/ExamMapperToModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Exam/ExamModelMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Exam/ExamMapperToDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/KonusarakOgren.ModelMapper.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/KonusarakOgren.ModelMapper.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/obj/KonusarakOgren.ModelMapper.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/obj/KonusarakOgren.ModelMapper.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/obj/KonusarakOgren.ModelMapper.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/obj/KonusarakOgren.ModelMapper.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.ModelMapper/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.Service/Abstract/IExamService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Service/Abstract/IExamService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.Service/Concrete/ExamService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Service/Concrete/ExamService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/Controllers/AuthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/Controllers/ExamController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/Controllers/ExamController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/KonusarakOgren.WebUI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/KonusarakOgren.WebUI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/Views/Exam/CreateExam.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/Views/Exam/CreateExam.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/Views/Exam/ExamGenerator.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/Views/Exam/ExamGenerator.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/Views/Exam/ListExams.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/Views/Exam/ListExams.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/konusarakogren.db" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/konusarakogren.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/Razor/Views/Exam/CreateExam.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/Razor/Views/Exam/CreateExam.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/Razor/Views/Exam/ExamGenerator.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/Razor/Views/Exam/ExamGenerator.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/Razor/Views/Exam/ListExams.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/Razor/Views/Exam/ListExams.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/KonusarakOgren.WebUI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/KonusarakOgren.WebUI.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,60 +166,61 @@
     <setting file="file://$PROJECT_DIR$/KonusarakOgren.Model/Auth/RegisterViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KonusarakOgren.Model/Exam/CreateExamViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CF282CE3-4F26-42B6-A4F6-AEA54335F8C8/C/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/595A5ABC-AB92-4E7E-8842-727062C80162/C/Controller.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Views/Shared/Components/NavBar/Default.cshtml" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Class1.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Models/ExamGeneratorViewModel.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Class1.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.ModelMapper/ExamGenerator/ExamGeneratorModelMapper.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/ExamService.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ScrapeWiredComResponseModel.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/ExamGeneratorViewModel.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Business/Abstract/IExamService.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/AuthBusiness.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Exam/ExamGeneratorModelMapper.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Exam/ExamGenerator.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Class1.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/ExamQuestionDto.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Business/Abstract/IAuthBusiness.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/ExamBusinessValidation.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/ExamDto.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Service/Class1.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Core/Class1.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Core/ServiceResult.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.DtoMapper/Class1.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/ExamCreateRequestDto.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/ExamQuestionCreateRequestDto.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamCreateResponseModel.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Model/Auth/LoginViewModel.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Model/Auth/RegisterViewModel.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/CreateExamViewModel.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/ListExamsViewModel.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamDeleteResponseModel.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Request/ExamCreateRequestModel.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Controllers/AuthController.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Controllers/ExamController.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Business/Abstract/IExamBusiness.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamGetResponseModel.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/ExamBusiness.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamGetAllResponsoDto.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamGetAllResponseDto.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Core/Utilities/Result/ServiceResult.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.DtoMapper/Exam/ExamDtoMapper.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamQuestionGetAllResponseDto.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Request/ExamQuestionCreateRequestModel.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamQuestionResponseModel.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamGetByResponseModel.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamGetAllResponseModel.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamQuestioneResponseDto.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamQuestionResponseDto.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamGetByResponseDto.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Exam/ExamModelMapper.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamGetResponseDto.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Exam/ExamGeneratorModelMapper.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/ListExamsViewModel.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamGetResponseModel.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Core/Utilities/Result/BaseResultModal.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Core/Utilities/Result/BaseResultModel.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamGetAllResponseModel.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Entity/Entities/ExamQuestion.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Business/Abstract/IExamBusiness.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/ExamBusinessValidation.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Views/Exam/ExamGenerator.cshtml" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/CreateExamResponseDto.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Core/Utilities/Result/ServiceResult.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamCreateResponseDto.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamQuestionCreateResponseDto.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamCreateResponseModel.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/ExamQuestionViewModel.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Startup.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/CreateExamViewModel.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Views/Exam/CreateExam.cshtml" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Service/Abstract/IExamService.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/ExamBusiness.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Request/ExamCreateRequestModel.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamGetResponseDto.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Views/Exam/ListExams.cshtml" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Controllers/ExamController.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Request/ExamQuestionCreateRequestModel.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Exam/ExamMapperToDto.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/ExamQuestionCreateRequestDto.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Request/ExamQuestionRequestModel.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamQuestionResponseModel.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Exam/ExamMapperToModel.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamQuestionResponseDto.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Entity/Abstract/IGenericDal.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Entity/Concrete/EfGenericDal.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.DtoMapper/Exam/ExamDtoMapper.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Service/Concrete/ExamService.cs" />
       </list>
     </option>
@@ -196,7 +298,7 @@
       <workItem from="1605858537028" duration="5466000" />
       <workItem from="1605864932077" duration="4990000" />
       <workItem from="1605870192901" duration="4744000" />
-      <workItem from="1605877431812" duration="13943000" />
+      <workItem from="1605877431812" duration="29209000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1605879919984</created>
@@ -212,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605883033574</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ExamService is done">
+      <created>1605893609567</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605893609567</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,93 +333,94 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit." />
     <MESSAGE value="createExam commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="createExam commit" />
+    <MESSAGE value="ExamService is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="ExamService is done" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="492" height="464" key="DebuggerActiveHint" timestamp="1605867402490">
+    <state width="492" height="464" key="DebuggerActiveHint" timestamp="1605909356439">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="492" height="464" key="DebuggerActiveHint/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605867402490" />
-    <state width="2517" height="369" key="GridCell.Tab.0.bottom" timestamp="1605885552243">
+    <state width="492" height="464" key="DebuggerActiveHint/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909356439" />
+    <state width="2517" height="369" key="GridCell.Tab.0.bottom" timestamp="1605909275456">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552243" />
-    <state width="2517" height="369" key="GridCell.Tab.0.center" timestamp="1605885552243">
+    <state width="2517" height="369" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275456" />
+    <state width="2517" height="369" key="GridCell.Tab.0.center" timestamp="1605909275456">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552243" />
-    <state width="2517" height="369" key="GridCell.Tab.0.left" timestamp="1605885552243">
+    <state width="2517" height="369" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275456" />
+    <state width="2517" height="369" key="GridCell.Tab.0.left" timestamp="1605909275456">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552243" />
-    <state width="2517" height="369" key="GridCell.Tab.0.right" timestamp="1605885552243">
+    <state width="2517" height="369" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275456" />
+    <state width="2517" height="369" key="GridCell.Tab.0.right" timestamp="1605909275456">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552243" />
-    <state width="2517" height="369" key="GridCell.Tab.1.bottom" timestamp="1605885552244">
+    <state width="2517" height="369" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275456" />
+    <state width="2517" height="369" key="GridCell.Tab.1.bottom" timestamp="1605909317181">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552244" />
-    <state width="2517" height="369" key="GridCell.Tab.1.center" timestamp="1605885552244">
+    <state width="2517" height="369" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909317181" />
+    <state width="2517" height="369" key="GridCell.Tab.1.center" timestamp="1605909317181">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.1.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552244" />
-    <state width="2517" height="369" key="GridCell.Tab.1.left" timestamp="1605885552243">
+    <state width="2517" height="369" key="GridCell.Tab.1.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909317181" />
+    <state width="2517" height="369" key="GridCell.Tab.1.left" timestamp="1605909317181">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.1.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552243" />
-    <state width="2517" height="369" key="GridCell.Tab.1.right" timestamp="1605885552244">
+    <state width="2517" height="369" key="GridCell.Tab.1.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909317181" />
+    <state width="2517" height="369" key="GridCell.Tab.1.right" timestamp="1605909317181">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552244" />
-    <state width="2517" height="369" key="GridCell.Tab.2.bottom" timestamp="1605885552244">
+    <state width="2517" height="369" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909317181" />
+    <state width="2517" height="369" key="GridCell.Tab.2.bottom" timestamp="1605909275332">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.2.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552244" />
-    <state width="2517" height="369" key="GridCell.Tab.2.center" timestamp="1605885552244">
+    <state width="2517" height="369" key="GridCell.Tab.2.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275332" />
+    <state width="2517" height="369" key="GridCell.Tab.2.center" timestamp="1605909275332">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.2.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552244" />
-    <state width="2517" height="369" key="GridCell.Tab.2.left" timestamp="1605885552244">
+    <state width="2517" height="369" key="GridCell.Tab.2.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275332" />
+    <state width="2517" height="369" key="GridCell.Tab.2.left" timestamp="1605909275332">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.2.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552244" />
-    <state width="2517" height="369" key="GridCell.Tab.2.right" timestamp="1605885552244">
+    <state width="2517" height="369" key="GridCell.Tab.2.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275332" />
+    <state width="2517" height="369" key="GridCell.Tab.2.right" timestamp="1605909275332">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.2.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552244" />
-    <state width="2517" height="369" key="GridCell.Tab.3.bottom" timestamp="1605885552244">
+    <state width="2517" height="369" key="GridCell.Tab.2.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275332" />
+    <state width="2517" height="369" key="GridCell.Tab.3.bottom" timestamp="1605909275333">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.3.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552244" />
-    <state width="2517" height="369" key="GridCell.Tab.3.center" timestamp="1605885552244">
+    <state width="2517" height="369" key="GridCell.Tab.3.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275333" />
+    <state width="2517" height="369" key="GridCell.Tab.3.center" timestamp="1605909275333">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.3.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552244" />
-    <state width="2517" height="369" key="GridCell.Tab.3.left" timestamp="1605885552244">
+    <state width="2517" height="369" key="GridCell.Tab.3.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275333" />
+    <state width="2517" height="369" key="GridCell.Tab.3.left" timestamp="1605909275332">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.3.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552244" />
-    <state width="2517" height="369" key="GridCell.Tab.3.right" timestamp="1605885552244">
+    <state width="2517" height="369" key="GridCell.Tab.3.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275332" />
+    <state width="2517" height="369" key="GridCell.Tab.3.right" timestamp="1605909275333">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.3.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552244" />
-    <state width="2517" height="369" key="GridCell.Tab.4.bottom" timestamp="1605885552245">
+    <state width="2517" height="369" key="GridCell.Tab.3.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275333" />
+    <state width="2517" height="369" key="GridCell.Tab.4.bottom" timestamp="1605909275333">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.4.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552245" />
-    <state width="2517" height="369" key="GridCell.Tab.4.center" timestamp="1605885552245">
+    <state width="2517" height="369" key="GridCell.Tab.4.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275333" />
+    <state width="2517" height="369" key="GridCell.Tab.4.center" timestamp="1605909275333">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.4.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552245" />
-    <state width="2517" height="369" key="GridCell.Tab.4.left" timestamp="1605885552245">
+    <state width="2517" height="369" key="GridCell.Tab.4.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275333" />
+    <state width="2517" height="369" key="GridCell.Tab.4.left" timestamp="1605909275333">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.4.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552245" />
-    <state width="2517" height="369" key="GridCell.Tab.4.right" timestamp="1605885552245">
+    <state width="2517" height="369" key="GridCell.Tab.4.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275333" />
+    <state width="2517" height="369" key="GridCell.Tab.4.right" timestamp="1605909275333">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.4.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885552245" />
+    <state width="2517" height="369" key="GridCell.Tab.4.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909275333" />
     <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size" timestamp="1605881769959">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -319,14 +429,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1114" y="401" key="RiderGenerateDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605887626955" />
-    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog" timestamp="1605892070321">
+    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog" timestamp="1605909039562">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605892070321" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1605885175906">
+    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909039562" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1605893805558">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605885175906" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605893805558" />
     <state width="1288" height="708" key="XDebugger.FullValuePopup" timestamp="1605827313776">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -335,5 +445,91 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605892867392" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/KonusarakOgren.DtoMapper/Exam/ExamDtoMapper.cs</url>
+          <line>76</line>
+          <properties documentPath="C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.DtoMapper\Exam\ExamDtoMapper.cs" initialLine="76">
+            <startOffsets>
+              <option value="2587" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2873" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/KonusarakOgren.DtoMapper/Exam/ExamDtoMapper.cs</url>
+          <line>91</line>
+          <properties documentPath="C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.DtoMapper\Exam\ExamDtoMapper.cs" initialLine="91">
+            <startOffsets>
+              <option value="3038" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3341" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/KonusarakOgren.DtoMapper/Exam/ExamDtoMapper.cs</url>
+          <line>51</line>
+          <properties documentPath="C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.DtoMapper\Exam\ExamDtoMapper.cs" initialLine="51">
+            <startOffsets>
+              <option value="1719" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1986" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/KonusarakOgren.Service/Concrete/ExamService.cs</url>
+          <line>32</line>
+          <properties documentPath="C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Service\Concrete\ExamService.cs" initialLine="31">
+            <startOffsets>
+              <option value="1111" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1178" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/KonusarakOgren.Service/Concrete/ExamService.cs</url>
+          <line>28</line>
+          <properties documentPath="C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Service\Concrete\ExamService.cs" initialLine="28">
+            <startOffsets>
+              <option value="843" />
+              <option value="906" />
+            </startOffsets>
+            <endOffsets>
+              <option value="932" />
+              <option value="921" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/KonusarakOgren.Service/Concrete/ExamService.cs</url>
+          <line>30</line>
+          <properties documentPath="C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Service\Concrete\ExamService.cs" initialLine="29">
+            <startOffsets>
+              <option value="1012" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1098" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

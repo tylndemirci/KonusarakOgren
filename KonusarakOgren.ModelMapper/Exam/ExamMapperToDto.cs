@@ -7,7 +7,7 @@ using KonusarakOgren.Model.Exam.Response;
 
 namespace KonusarakOgren.ModelMapper.Exam
 {
-    public static class ExamModelMapper
+    public static class ExamMapperToDto
     {
         public static ExamCreateRequestDto MapToDto(this ExamCreateRequestModel model)
         {
@@ -32,35 +32,7 @@ namespace KonusarakOgren.ModelMapper.Exam
                 OptionC = model.OptionC,
                 OptionD = model.OptionD,
                 Answer = model.Answer,
-            };
-        }
-
-
-        public static ExamGetResponseDto MapToDto(this Entity.Entities.Exam exam)
-        {
-            if (exam == null) return null;
-            return new ExamGetResponseDto()
-            {
-                Title = exam.Title,
-                Content = exam.Content,
-                ExamQuestions = exam.ExamQuestions.Select(x => x.MapToDto()).ToList(),
-                DateTime = exam.DateTime
-            };
-        }
-
-        
-
-        public static ExamQuestionResponseDto MapToDto(this ExamQuestion exam)
-        {
-            if (exam == null) return null;
-            return new ExamQuestionResponseDto
-            {
-                Question = exam.Question,
-                OptionA = exam.OptionA,
-                OptionB = exam.OptionB,
-                OptionC = exam.OptionC,
-                OptionD = exam.OptionD,
-                Answer = exam.Answer,
+                ExamId = model.ExamId
             };
         }
     }

@@ -10,6 +10,8 @@ using Microsoft.Extensions.Hosting;
 using KonusarakOgren.Entity;
 using KonusarakOgren.Entity.Abstract;
 using KonusarakOgren.Entity.Concrete;
+using KonusarakOgren.Service.Abstract;
+using KonusarakOgren.Service.Concrete;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace KonusarakOgren.WebUI
@@ -41,6 +43,7 @@ namespace KonusarakOgren.WebUI
             services.AddTransient<IExamBusiness, ExamBusiness>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddScoped(typeof(IGenericDal<>), typeof(EfGenericDal<>));
+            services.AddTransient<IExamService, ExamService>();
             
             services.AddControllersWithViews();
 

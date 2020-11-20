@@ -2124,6 +2124,9 @@
       "KonusarakOgren.DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "KonusarakOgren.Entity": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/KonusarakOgren.DTO.dll": {}
         },
@@ -2136,7 +2139,9 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "KonusarakOgren.DTO": "1.0.0",
-          "KonusarakOgren.Entity": "1.0.0"
+          "KonusarakOgren.Entity": "1.0.0",
+          "KonusarakOgren.Model": "1.0.0",
+          "KonusarakOgren.ModelMapper": "1.0.0"
         },
         "compile": {
           "bin/placeholder/KonusarakOgren.DtoMapper.dll": {}
@@ -2168,6 +2173,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "KonusarakOgren.Core": "1.0.0",
           "KonusarakOgren.DTO": "1.0.0",
           "KonusarakOgren.Entity": "1.0.0"
         },
@@ -2182,6 +2188,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "KonusarakOgren.Core": "1.0.0",
           "KonusarakOgren.DTO": "1.0.0",
           "KonusarakOgren.Entity": "1.0.0",
           "KonusarakOgren.Model": "1.0.0"
@@ -7227,6 +7234,7 @@
       "KonusarakOgren.Entity >= 1.0.0",
       "KonusarakOgren.Model >= 1.0.0",
       "KonusarakOgren.ModelMapper >= 1.0.0",
+      "KonusarakOgren.Service >= 1.0.0",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
@@ -7275,6 +7283,9 @@
             },
             "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj": {
               "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj"
+            },
+            "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Service\\KonusarakOgren.Service.csproj": {
+              "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Service\\KonusarakOgren.Service.csproj"
             }
           }
         }

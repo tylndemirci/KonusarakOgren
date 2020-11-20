@@ -112,3 +112,15 @@ C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\bin\Debug\netcor
 C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Exam\CreateExam.cshtml.g.cs
 C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Exam\ListExams.cshtml.g.cs
 C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\NavBar\Default.cshtml.g.cs
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\bin\Debug\netcoreapp3.1\KonusarakOgren.Core.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\bin\Debug\netcoreapp3.1\KonusarakOgren.DTO.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\bin\Debug\netcoreapp3.1\KonusarakOgren.DtoMapper.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\bin\Debug\netcoreapp3.1\KonusarakOgren.Model.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\bin\Debug\netcoreapp3.1\KonusarakOgren.ModelMapper.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\bin\Debug\netcoreapp3.1\KonusarakOgren.Service.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\bin\Debug\netcoreapp3.1\KonusarakOgren.ModelMapper.pdb
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\bin\Debug\netcoreapp3.1\KonusarakOgren.Model.pdb
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\bin\Debug\netcoreapp3.1\KonusarakOgren.Core.pdb
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\bin\Debug\netcoreapp3.1\KonusarakOgren.DTO.pdb
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\bin\Debug\netcoreapp3.1\KonusarakOgren.DtoMapper.pdb
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.WebUI\bin\Debug\netcoreapp3.1\KonusarakOgren.Service.pdb

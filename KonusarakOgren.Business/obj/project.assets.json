@@ -2099,6 +2099,9 @@
       "KonusarakOgren.DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "KonusarakOgren.Entity": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/KonusarakOgren.DTO.dll": {}
         },
@@ -2111,7 +2114,9 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "KonusarakOgren.DTO": "1.0.0",
-          "KonusarakOgren.Entity": "1.0.0"
+          "KonusarakOgren.Entity": "1.0.0",
+          "KonusarakOgren.Model": "1.0.0",
+          "KonusarakOgren.ModelMapper": "1.0.0"
         },
         "compile": {
           "bin/placeholder/KonusarakOgren.DtoMapper.dll": {}
@@ -2143,6 +2148,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "KonusarakOgren.Core": "1.0.0",
           "KonusarakOgren.DTO": "1.0.0",
           "KonusarakOgren.Entity": "1.0.0"
         },
@@ -2157,6 +2163,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "KonusarakOgren.Core": "1.0.0",
           "KonusarakOgren.DTO": "1.0.0",
           "KonusarakOgren.Entity": "1.0.0",
           "KonusarakOgren.Model": "1.0.0"

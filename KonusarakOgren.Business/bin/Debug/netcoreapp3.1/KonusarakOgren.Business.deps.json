@@ -9,7 +9,12 @@
       "KonusarakOgren.Business/1.0.0": {
         "dependencies": {
           "HtmlAgilityPack": "1.11.28",
+          "KonusarakOgren.Core": "1.0.0",
+          "KonusarakOgren.DTO": "1.0.0",
           "KonusarakOgren.Entity": "1.0.0",
+          "KonusarakOgren.Model": "1.0.0",
+          "KonusarakOgren.ModelMapper": "1.0.0",
+          "KonusarakOgren.Service": "1.0.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.0",
@@ -1605,6 +1610,30 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "KonusarakOgren.Core/1.0.0": {
+        "runtime": {
+          "KonusarakOgren.Core.dll": {}
+        }
+      },
+      "KonusarakOgren.DTO/1.0.0": {
+        "dependencies": {
+          "KonusarakOgren.Entity": "1.0.0"
+        },
+        "runtime": {
+          "KonusarakOgren.DTO.dll": {}
+        }
+      },
+      "KonusarakOgren.DtoMapper/1.0.0": {
+        "dependencies": {
+          "KonusarakOgren.DTO": "1.0.0",
+          "KonusarakOgren.Entity": "1.0.0",
+          "KonusarakOgren.Model": "1.0.0",
+          "KonusarakOgren.ModelMapper": "1.0.0"
+        },
+        "runtime": {
+          "KonusarakOgren.DtoMapper.dll": {}
+        }
+      },
       "KonusarakOgren.Entity/1.0.0": {
         "dependencies": {
           "HtmlAgilityPack": "1.11.28",
@@ -1617,6 +1646,40 @@
         },
         "runtime": {
           "KonusarakOgren.Entity.dll": {}
+        }
+      },
+      "KonusarakOgren.Model/1.0.0": {
+        "dependencies": {
+          "KonusarakOgren.Core": "1.0.0",
+          "KonusarakOgren.DTO": "1.0.0",
+          "KonusarakOgren.Entity": "1.0.0"
+        },
+        "runtime": {
+          "KonusarakOgren.Model.dll": {}
+        }
+      },
+      "KonusarakOgren.ModelMapper/1.0.0": {
+        "dependencies": {
+          "KonusarakOgren.Core": "1.0.0",
+          "KonusarakOgren.DTO": "1.0.0",
+          "KonusarakOgren.Entity": "1.0.0",
+          "KonusarakOgren.Model": "1.0.0"
+        },
+        "runtime": {
+          "KonusarakOgren.ModelMapper.dll": {}
+        }
+      },
+      "KonusarakOgren.Service/1.0.0": {
+        "dependencies": {
+          "KonusarakOgren.Core": "1.0.0",
+          "KonusarakOgren.DTO": "1.0.0",
+          "KonusarakOgren.DtoMapper": "1.0.0",
+          "KonusarakOgren.Entity": "1.0.0",
+          "KonusarakOgren.Model": "1.0.0",
+          "KonusarakOgren.ModelMapper": "1.0.0"
+        },
+        "runtime": {
+          "KonusarakOgren.Service.dll": {}
         }
       }
     }
@@ -2586,7 +2649,37 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
+    "KonusarakOgren.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KonusarakOgren.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KonusarakOgren.DtoMapper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "KonusarakOgren.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KonusarakOgren.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KonusarakOgren.ModelMapper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KonusarakOgren.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

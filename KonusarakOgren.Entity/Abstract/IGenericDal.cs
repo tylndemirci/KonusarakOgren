@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
@@ -9,10 +10,8 @@ namespace KonusarakOgren.Entity.Abstract
         IQueryable<T> GetAll();
         IQueryable<T> GetBy(Expression<Func<T, bool>> predicate);
 
-        void Create(T entity);
+        T Create(T entity);
+        void CreateGroup(List<T> entities);
         void Update(T entity);
-
-
-
     }
-}
+}    

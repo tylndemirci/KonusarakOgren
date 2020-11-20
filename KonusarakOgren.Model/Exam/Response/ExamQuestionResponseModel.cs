@@ -10,5 +10,6 @@
         public string OptionD { get; set; }
 
         public string Answer { get; set; }
+        public int ExamId { get; set; }
     }
 }

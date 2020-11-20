@@ -8,6 +8,6 @@ namespace KonusarakOgren.Model.Exam.Request
         public string Title { get; set; }
         public string Content { get; set; }
         public List<ExamQuestionCreateRequestModel> ExamQuestions { get; set; }
-        public string DateTime { get; set; }
+        public string DateTime = System.DateTime.Now.ToString("yyyy-MM-dd");
     }
 }

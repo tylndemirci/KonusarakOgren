@@ -202,6 +202,12 @@
               },
               "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj": {
                 "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj"
+              },
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\KonusarakOgren.ModelMapper.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\KonusarakOgren.ModelMapper.csproj"
+              },
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj"
               }
             }
           }
@@ -257,7 +263,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Entity\\KonusarakOgren.Entity.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -408,6 +418,9 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Core\\KonusarakOgren.Core.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Core\\KonusarakOgren.Core.csproj"
+              },
               "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj": {
                 "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj"
               },
@@ -472,6 +485,9 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Core\\KonusarakOgren.Core.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Core\\KonusarakOgren.Core.csproj"
+              },
               "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj": {
                 "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj"
               },
@@ -617,6 +633,9 @@
               },
               "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj": {
                 "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj"
+              },
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Service\\KonusarakOgren.Service.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Service\\KonusarakOgren.Service.csproj"
               }
             }
           }

@@ -12,8 +12,7 @@ namespace KonusarakOgren.Business.Abstract
         ExamCreateResponseModel CreateExam(ExamCreateRequestModel model);
         ExamDeleteResponseModel DeleteExam(int examId);
 
-        ExamGetResponseModel GetAllExams();
-        ExamGetByResponseModel GetByExams();
+        ExamGetAllResponseModel GetAllExams();
 
 
         Task<ScrapeWiredComResponseModel> ScrapeWiredCom();

@@ -7,7 +7,8 @@ namespace KonusarakOgren.Model.Exam
     {
         public string Title { get; set; }
         public string Content { get; set; }
-        public List<ExamQuestion> ExamQuestions { get; set; }
+        public string DateTime { get; set; }
+        public List<ExamQuestionViewModel> ExamQuestions { get; set; }
         public string Answer { get; set; }
     }
 }

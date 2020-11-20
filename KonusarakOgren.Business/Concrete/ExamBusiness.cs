@@ -29,25 +29,23 @@ namespace KonusarakOgren.Business.Concrete
 
             var createExam = model.MapToDto();
             var result = _examService.CreateExam(createExam);
+            
             return new ExamCreateResponseModel() {Success = result.Success};
         }
 
         public ExamDeleteResponseModel DeleteExam(int examId)
         {
+            DeleteExamValidation(examId);
             var result = _examService.DeleteExam(examId);
             return new ExamDeleteResponseModel() {Success = result.Success};
         }
 
         public ExamGetAllResponseModel GetAllExams()
         {
-           var exams = _examService.GetAllExams().Where(x => x.IsDeleted == false);
-           return new ExamGetByResponseModel() {};
+            var exams = _examService.GetAll();
+            return exams.MapToModel();
         }
 
-        public ExamGetByResponseModel GetByExams()
-        {
-            return new ExamGetByResponseModel();
-        }
 
         public async Task<ScrapeWiredComResponseModel> ScrapeWiredCom()
         {

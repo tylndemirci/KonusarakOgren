@@ -1,16 +1,12 @@
-﻿namespace KonusarakOgren.Model.Exam
+﻿using System.Collections.Generic;
+
+namespace KonusarakOgren.Model.Exam
 {
     public class ListExamsViewModel
     {
-        public ListExamsViewModel(Entity.Entities.Exam exam)
-        {
-            Id = exam.Id;
-            Title = exam.Title;
-            DateTime = exam.DateTime;
-        }
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public string DateTime { get; set; }
+        public List<int> Id { get; set; }
+        public List<string> Title { get; set; }
+        public List<string> DateTime { get; set; }
        
         
     }

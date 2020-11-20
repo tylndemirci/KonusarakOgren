@@ -6,6 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\KonusarakOgren.Core\KonusarakOgren.Core.csproj" />
       <ProjectReference Include="..\KonusarakOgren.DTO\KonusarakOgren.DTO.csproj" />
       <ProjectReference Include="..\KonusarakOgren.Entity\KonusarakOgren.Entity.csproj" />
     </ItemGroup>

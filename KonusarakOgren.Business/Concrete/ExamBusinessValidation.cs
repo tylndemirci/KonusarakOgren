@@ -29,5 +29,13 @@ namespace KonusarakOgren.Business.Concrete
             }
             
         }
+
+        private void DeleteExamValidation(in int examId)
+        {
+            if (examId==0)
+            {
+                throw new Exception("İstek boş olamaz.");
+            }
+        }
     }
 }

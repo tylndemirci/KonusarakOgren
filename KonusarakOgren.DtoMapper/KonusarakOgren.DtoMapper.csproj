@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\KonusarakOgren.DTO\KonusarakOgren.DTO.csproj" />
+      <ProjectReference Include="..\KonusarakOgren.Entity\KonusarakOgren.Entity.csproj" />
+      <ProjectReference Include="..\KonusarakOgren.ModelMapper\KonusarakOgren.ModelMapper.csproj" />
+      <ProjectReference Include="..\KonusarakOgren.Model\KonusarakOgren.Model.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -32,6 +32,7 @@
     <ProjectReference Include="..\KonusarakOgren.Entity\KonusarakOgren.Entity.csproj" />
     <ProjectReference Include="..\KonusarakOgren.ModelMapper\KonusarakOgren.ModelMapper.csproj" />
     <ProjectReference Include="..\KonusarakOgren.Model\KonusarakOgren.Model.csproj" />
+    <ProjectReference Include="..\KonusarakOgren.Service\KonusarakOgren.Service.csproj" />
   </ItemGroup>
 
 </Project>

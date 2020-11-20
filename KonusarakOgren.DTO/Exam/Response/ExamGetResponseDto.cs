@@ -4,7 +4,8 @@ namespace KonusarakOgren.DTO.Exam.Response
 {
     public class ExamGetResponseDto
     {
-        public string Title { get; set; }
+        public int Id { get; set; }
+        public string Title { get; set; }    
         public string Content { get; set; }
         public List<ExamQuestionResponseDto> ExamQuestions { get; set; }
         public string DateTime { get; set; }

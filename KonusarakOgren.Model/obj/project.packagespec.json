@@ -16,6 +16,9 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
+          "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Core\\KonusarakOgren.Core.csproj": {
+            "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Core\\KonusarakOgren.Core.csproj"
+          },
           "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj": {
             "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj"
           },
