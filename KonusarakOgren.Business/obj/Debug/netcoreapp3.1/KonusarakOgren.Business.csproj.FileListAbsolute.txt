@@ -1,0 +1,15 @@
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.Business.deps.json
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.Business.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.Business.pdb
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\obj\Debug\netcoreapp3.1\KonusarakOgren.Business.csprojAssemblyReference.cache
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\obj\Debug\netcoreapp3.1\KonusarakOgren.Business.AssemblyInfoInputs.cache
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\obj\Debug\netcoreapp3.1\KonusarakOgren.Business.AssemblyInfo.cs
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\obj\Debug\netcoreapp3.1\KonusarakOgren.Business.csproj.CoreCompileInputs.cache
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\obj\Debug\netcoreapp3.1\KonusarakOgren.Business.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\obj\Debug\netcoreapp3.1\KonusarakOgren.Business.pdb
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.Entity.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.Entity.pdb
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\obj\Debug\netcoreapp3.1\KonusarakOgren.Business.csproj.CopyComplete
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.Business.runtimeconfig.json
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\bin\Debug\netcoreapp3.1\KonusarakOgren.Business.runtimeconfig.dev.json
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Business\obj\Debug\netcoreapp3.1\KonusarakOgren.Business.genruntimeconfig.cache

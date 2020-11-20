@@ -1,0 +1,43 @@
+﻿@model KonusarakOgren.WebUI.Models.ExamGeneratorViewModel
+<div class="container p-5">
+    <div class="row">
+        <table class="table-sm w-75">
+
+           <tr style="font-size: 20px; border: 2px solid black">
+                <th class="pl-3">#</th>
+                <th>Başlık</th>
+                <th></th>
+
+            </tr>
+
+            @for (int i = 0; i < Model.TitleList.Count; i++)
+            {
+                <tr>
+                    <td class="pl-3">@(i + 1)</td>
+                    <td>
+                        @{
+                            var substring = @Model.TitleList[i];
+                            if (@Model.TitleList[i].Length > 28)
+                            {
+                                substring = @Model.TitleList[i].Substring(0, 28);
+                                substring += "...";
+                            }
+
+                        }
+                        @substring
+                    </td>
+                    <form asp-controller="Exam" asp-action="CreateExam" method="get">
+                        <td>
+                            @Html.Hidden("title", Model.TitleList[i])
+                            @Html.Hidden("content", Model.ContentList[i])
+                            <button type="submit" class="btn btn-primary">Sınav Oluştur</button>
+                        </td>
+                    </form>
+                </tr>
+            }
+
+
+
+        </table>
+    </div>
+</div>

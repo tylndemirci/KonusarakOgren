@@ -1,0 +1,133 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\KonusarakOgren.ModelMapper.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj",
+        "projectName": "KonusarakOgren.DTO",
+        "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj",
+        "packagesPath": "C:\\Users\\t4yl4\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\t4yl4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\KonusarakOgren.ModelMapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\KonusarakOgren.ModelMapper.csproj",
+        "projectName": "KonusarakOgren.ModelMapper",
+        "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\KonusarakOgren.ModelMapper.csproj",
+        "packagesPath": "C:\\Users\\t4yl4\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\t4yl4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj",
+        "projectName": "KonusarakOgren.Model",
+        "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj",
+        "packagesPath": "C:\\Users\\t4yl4\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\t4yl4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj": {
+                "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.DTO\\KonusarakOgren.DTO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

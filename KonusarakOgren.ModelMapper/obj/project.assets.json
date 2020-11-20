@@ -1,0 +1,93 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "KonusarakOgren.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "compile": {
+          "bin/placeholder/KonusarakOgren.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KonusarakOgren.DTO.dll": {}
+        }
+      },
+      "KonusarakOgren.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "KonusarakOgren.DTO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KonusarakOgren.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KonusarakOgren.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KonusarakOgren.DTO/1.0.0": {
+      "type": "project",
+      "path": "../KonusarakOgren.DTO/KonusarakOgren.DTO.csproj",
+      "msbuildProject": "../KonusarakOgren.DTO/KonusarakOgren.DTO.csproj"
+    },
+    "KonusarakOgren.Model/1.0.0": {
+      "type": "project",
+      "path": "../KonusarakOgren.Model/KonusarakOgren.Model.csproj",
+      "msbuildProject": "../KonusarakOgren.Model/KonusarakOgren.Model.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "KonusarakOgren.Model >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\t4yl4\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\KonusarakOgren.ModelMapper.csproj",
+      "projectName": "KonusarakOgren.ModelMapper",
+      "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\KonusarakOgren.ModelMapper.csproj",
+      "packagesPath": "C:\\Users\\t4yl4\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\t4yl4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "projectReferences": {
+            "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj": {
+              "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "targetAlias": "net472",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

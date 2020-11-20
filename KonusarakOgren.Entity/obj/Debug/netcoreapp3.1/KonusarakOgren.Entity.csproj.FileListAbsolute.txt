@@ -1,0 +1,12 @@
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Entity\bin\Debug\netcoreapp3.1\KonusarakOgren.Entity.deps.json
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Entity\bin\Debug\netcoreapp3.1\KonusarakOgren.Entity.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Entity\bin\Debug\netcoreapp3.1\KonusarakOgren.Entity.pdb
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Entity\obj\Debug\netcoreapp3.1\KonusarakOgren.Entity.csprojAssemblyReference.cache
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Entity\obj\Debug\netcoreapp3.1\KonusarakOgren.Entity.AssemblyInfoInputs.cache
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Entity\obj\Debug\netcoreapp3.1\KonusarakOgren.Entity.AssemblyInfo.cs
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Entity\obj\Debug\netcoreapp3.1\KonusarakOgren.Entity.csproj.CoreCompileInputs.cache
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Entity\obj\Debug\netcoreapp3.1\KonusarakOgren.Entity.dll
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Entity\obj\Debug\netcoreapp3.1\KonusarakOgren.Entity.pdb
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Entity\bin\Debug\netcoreapp3.1\KonusarakOgren.Entity.runtimeconfig.json
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Entity\bin\Debug\netcoreapp3.1\KonusarakOgren.Entity.runtimeconfig.dev.json
+C:\Users\t4yl4\source\repos\KonusarakOgren\KonusarakOgren.Entity\obj\Debug\netcoreapp3.1\KonusarakOgren.Entity.genruntimeconfig.cache

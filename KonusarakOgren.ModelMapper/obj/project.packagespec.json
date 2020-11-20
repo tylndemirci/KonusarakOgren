@@ -1,0 +1,36 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\KonusarakOgren.ModelMapper.csproj",
+    "projectName": "KonusarakOgren.ModelMapper",
+    "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\KonusarakOgren.ModelMapper.csproj",
+    "outputPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.ModelMapper\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "net472"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "net472": {
+        "projectReferences": {
+          "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj": {
+            "projectPath": "C:\\Users\\t4yl4\\source\\repos\\KonusarakOgren\\KonusarakOgren.Model\\KonusarakOgren.Model.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "net472": {
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+    }
+  }
+}

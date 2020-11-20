@@ -1,0 +1,44 @@
+﻿@model IEnumerable<KonusarakOgren.WebUI.Models.ListExamsViewModel>
+<div class="container p-5">
+    <div class="row">
+        <table class="table-sm w-75">
+
+            <tr class="mb-5" style="font-size: 20px; border: 2px solid black">
+                <th class="pl-3">#</th>
+                <th>Başlık</th>
+                <th>Tarih</th>
+                <th></th>
+
+            </tr>
+            
+            @foreach (var exam in Model)
+            {
+                <tr>
+                    <td class="pl-3">@exam.Id</td>
+                    <td style="width: 350px">
+                        @{
+                            var substring = @exam.Title;
+                            if (@exam.Title.Length > 28)
+                            {
+                                substring = @exam.Title.Substring(0, 28);
+                                substring += "...";
+                            }
+
+                        }
+                        @substring
+                    </td>
+                    <td>@exam.DateTime</td>
+                    <td>
+                        <a asp-controller="Exam" asp-action="DeleteExam" asp-route-examId="@exam.Id">Sil</a>
+                    </td>
+
+                </tr>
+            }
+
+
+
+
+
+        </table>
+    </div>
+</div>
