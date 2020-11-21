@@ -46,6 +46,12 @@ namespace KonusarakOgren.Business.Concrete
             return exams.MapToModel();
         }
 
+        public ExamGetExamResponseModel GetExam(int examId)
+        {
+            var exam = _examService.GetExam(examId);
+            return exam.Data.MapToModel();
+        }
+
 
         public async Task<ScrapeWiredComResponseModel> ScrapeWiredCom()
         {

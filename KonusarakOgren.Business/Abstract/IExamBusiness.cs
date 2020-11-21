@@ -14,7 +14,7 @@ namespace KonusarakOgren.Business.Abstract
 
         ExamGetAllResponseModel GetAllExams();
 
-
+        ExamGetExamResponseModel GetExam(int examId);
         Task<ScrapeWiredComResponseModel> ScrapeWiredCom();
     }
 }

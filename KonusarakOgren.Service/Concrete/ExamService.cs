@@ -44,15 +44,19 @@ namespace KonusarakOgren.Service.Concrete
         public ServiceResult<List<ExamGetResponseDto>> GetAll()
         {
             var exams = _unitOfWork.GetRepository<Exam>().GetAll().Where(x => x.IsDeleted == false).ToList();
+            if (exams == null) throw new Exception("Henüz sınav oluşturulmadı.");
             return new ServiceResult<List<ExamGetResponseDto>>()
-                {Data = exams.Select(x => x.MapToDto()).ToList(), Success = true};
+                {Data = exams.Select(x => x.MapToDtoGetAll()).ToList(), Success = true};
         }
 
-        public ServiceResult<List<ExamGetResponseDto>> GetBy(Expression<Func<Exam, bool>> predicate)
+        public ServiceResult<ExamGetExamResponseDto> GetExam(int examId)
         {
-            var exams = _unitOfWork.GetRepository<Exam>().GetBy(predicate);
-            return new ServiceResult<List<ExamGetResponseDto>>()
-                {Data = exams.Select(x => x.MapToDto()).ToList(), Success = true};
+            var exam = _unitOfWork.GetRepository<Exam>().GetBy(x => x.Id == examId).FirstOrDefault();
+            if (exam == null) throw new Exception("İlgili kayıt bulunamadı");
+            if (exam.IsDeleted == true) throw new Exception("İlgili kayıt bulunamadı.");
+            var examQuestions = _unitOfWork.GetRepository<ExamQuestion>().GetBy(x => x.ExamId == exam.Id).ToList();
+            exam.ExamQuestions = examQuestions;
+            return new ServiceResult<ExamGetExamResponseDto>() {Data = exam.MapToDto(), Success = true};
         }
     }
 }

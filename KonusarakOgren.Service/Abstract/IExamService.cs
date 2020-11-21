@@ -14,6 +14,6 @@ namespace KonusarakOgren.Service.Abstract
         ServiceResult CreateExam(ExamCreateRequestDto createRequestDto);
         ServiceResult DeleteExam(int examId);
         ServiceResult<List<ExamGetResponseDto>> GetAll();
-        ServiceResult<List<ExamGetResponseDto>> GetBy(Expression<Func<Exam, bool>> predicate);
-    }
+        ServiceResult<ExamGetExamResponseDto> GetExam(int examId);
+    }    
 }

@@ -5,6 +5,7 @@ using KonusarakOgren.Entity.Abstract;
 using KonusarakOgren.Entity.Entities;
 using KonusarakOgren.Model.Exam;
 using KonusarakOgren.Model.Exam.Request;
+using KonusarakOgren.Model.Exam.Response;
 using KonusarakOgren.ModelMapper.Exam;
 using Microsoft.AspNetCore.Mvc;
 
@@ -55,10 +56,16 @@ namespace KonusarakOgren.WebUI.Controllers
             return View(model);
         }
 
+       
+        public IActionResult TakeExam(int examId)
+        {
+            var exam = _examBusiness.GetExam(examId);
+            return View(exam);
+        }
+
       
         public IActionResult DeleteExam(int examId)
         {
-            var sa = 1;
             _examBusiness.DeleteExam(examId);
             
             return RedirectToAction("ListExams", "Exam");

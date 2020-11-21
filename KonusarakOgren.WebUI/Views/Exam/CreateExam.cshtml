@@ -3,7 +3,7 @@
 <form asp-controller="Exam" asp-action="CreateExam" method="post">
 <div class="row border border-dark rounded">
       @Html.HiddenFor(x=>x.Title)
-    <p class="mb-auto mt-auto p-2 ml-3">@Model.Title</p>
+    <h4 class="mb-auto mt-auto p-2 ml-3 ">@Model.Title</h4>
 </div>
 <div class="row border border-dark mt-3 rounded">
     @Html.HiddenFor(x=>x.Content)

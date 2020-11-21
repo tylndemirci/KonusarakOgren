@@ -2,6 +2,7 @@
 {
     public class ExamQuestionResponseDto
     {
+        public int Id { get; set; }
         public string Question { get; set; }
         public string OptionA { get; set; }
         public string OptionB { get; set; }

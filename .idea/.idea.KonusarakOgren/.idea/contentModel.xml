@@ -49,6 +49,7 @@
           <e p="ExamQuestionCreateRequestDto.cs" t="Include" />
           <e p="Response" t="Include">
             <e p="ExamCreateResponseDto.cs" t="Include" />
+            <e p="ExamGetExamResponseDto.cs" t="Include" />
             <e p="ExamGetResponseDto.cs" t="Include" />
             <e p="ExamQuestionGetAllResponseDto.cs" t="Include" />
             <e p="ExamQuestionResponseDto.cs" t="Include" />
@@ -122,6 +123,7 @@
             <e p="ExamCreateResponseModel.cs" t="Include" />
             <e p="ExamDeleteResponseModel.cs" t="Include" />
             <e p="ExamGetAllResponseModel.cs" t="Include" />
+            <e p="ExamGetExamResponseModel.cs" t="Include" />
             <e p="ExamGetResponseModel.cs" t="Include" />
             <e p="ExamQuestionCreateResponseDto.cs" t="Include" />
             <e p="ExamQuestionResponseModel.cs" t="Include" />
@@ -129,6 +131,9 @@
           </e>
         </e>
         <e p="KonusarakOgren.Model.csproj" t="IncludeRecursive" />
+        <e p="NavBar" t="Include">
+          <e p="NavBarExamIdsResponseModel.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -184,8 +189,6 @@
           <e p="ExamController.cs" t="Include" />
         </e>
         <e p="konusarakogren.db" t="Include" />
-        <e p="konusarakogren.db-shm" t="Include" />
-        <e p="konusarakogren.db-wal" t="Include" />
         <e p="KonusarakOgren.WebUI.csproj" t="IncludeRecursive" />
         <e p="Migrations" t="Include">
           <e p="20201120120552_Initial.cs" t="Include" />
@@ -220,6 +223,8 @@
             <e p="ExamGenerator.cshtml" t="Include" />
             <e p="ListExams.cshtml" t="Include" />
             <e p="ListExams.cshtml.cs" t="Include" />
+            <e p="TakeExam.cshtml" t="Include" />
+            <e p="TakeExam.cshtml.cs" t="Include" />
           </e>
           <e p="Home" t="Include" />
           <e p="Shared" t="Include">

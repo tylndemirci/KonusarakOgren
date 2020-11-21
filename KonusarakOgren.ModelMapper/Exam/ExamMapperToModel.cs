@@ -6,6 +6,7 @@ using KonusarakOgren.DTO.Exam.Response;
 using KonusarakOgren.Model.Exam;
 using KonusarakOgren.Model.Exam.Request;
 using KonusarakOgren.Model.Exam.Response;
+using KonusarakOgren.Model.NavBar;
 
 namespace KonusarakOgren.ModelMapper.Exam
 {
@@ -19,15 +20,35 @@ namespace KonusarakOgren.ModelMapper.Exam
                 Id = dto.Id,
                 Title = dto.Title,
                 Content = dto.Content,
-                DateTime = dto.DateTime
+                DateTime = dto.DateTime,
+               
+               
             };
         }
+        
+        public static ExamGetExamResponseModel MapToModel(this ExamGetExamResponseDto dto)
+        {
+            if (dto == null) return null;
+            return new ExamGetExamResponseModel()
+            {
+                Id = dto.Id,
+                Title = dto.Title,
+                Content = dto.Content,
+                DateTime = dto.DateTime,
+                ExamQuestions = dto.ExamQuestions.Select(x=>x.MapToModel()).ToList()
+               
+            };
+        }
+
+        
+     
 
         public static ExamQuestionResponseModel MapToModel(this ExamQuestionResponseDto model)
         {
             if (model == null) return null;
             return new ExamQuestionResponseModel()
             {
+                Id = model.Id,
                 Question = model.Question,
                 OptionA = model.OptionA,
                 OptionB = model.OptionB,
@@ -56,6 +77,16 @@ namespace KonusarakOgren.ModelMapper.Exam
                 Content = model.Content,
             };
         }
+        
+        public static NavBarExamIdsResponseModel MapToModel(this ExamGetResponseModel model)
+        {
+            if (model == null) return null;
+            return new NavBarExamIdsResponseModel()
+            {
+                Id = model.Id
+            };
+        }
+
         
 
     }

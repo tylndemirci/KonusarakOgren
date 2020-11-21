@@ -35,7 +35,20 @@ namespace KonusarakOgren.DtoMapper.Exam
             };
         }
 
-        public static  ExamGetResponseDto MapToDto(this Entity.Entities.Exam exam)
+        public static  ExamGetExamResponseDto MapToDto(this Entity.Entities.Exam exam)
+        {
+            if (exam == null) return null;
+            return new ExamGetExamResponseDto()
+            {
+                Id = exam.Id,
+                Title = exam.Title,
+                Content = exam.Content,
+                DateTime = exam.DateTime,
+                ExamQuestions = exam.ExamQuestions.Select(x=>x.MapToDto()).ToList()
+            };
+        }
+        
+        public static  ExamGetResponseDto MapToDtoGetAll(this Entity.Entities.Exam exam)
         {
             if (exam == null) return null;
             return new ExamGetResponseDto()
@@ -43,9 +56,10 @@ namespace KonusarakOgren.DtoMapper.Exam
                 Id = exam.Id,
                 Title = exam.Title,
                 Content = exam.Content,
-                DateTime = exam.DateTime
+                DateTime = exam.DateTime,
             };
         }
+      
         public static ExamCreateResponseDto CreateMapToDto(this Entity.Entities.Exam exam)
         {
             if (exam == null) return null;
@@ -91,6 +105,8 @@ namespace KonusarakOgren.DtoMapper.Exam
             if (exam == null) return null;
             return new ExamQuestionResponseDto
             {
+                Id = exam.Id,
+                ExamId = exam.ExamId,
                 Question = exam.Question,
                 OptionA = exam.OptionA,
                 OptionB = exam.OptionB,
@@ -99,5 +115,6 @@ namespace KonusarakOgren.DtoMapper.Exam
                 Answer = exam.Answer,
             };
         }
+        
     }
 }
