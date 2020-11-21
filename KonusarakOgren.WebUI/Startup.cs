@@ -32,7 +32,14 @@ namespace KonusarakOgren.WebUI
                 options.UseSqlite(
                     Configuration.GetConnectionString("SqliteConnection"), x=> x.MigrationsAssembly("KonusarakOgren.WebUI")));
 
-            services.AddIdentity<IdentityUser, IdentityRole>(options => options.Password.RequiredUniqueChars = 0)
+            services.AddIdentity<IdentityUser, IdentityRole>(options => {
+                options.Password.RequireDigit = false;
+            options.Password.RequireLowercase = false;
+            options.Password.RequireNonAlphanumeric = false;
+            options.Password.RequireUppercase = false;
+            options.Password.RequiredLength = 0;
+            options.Password.RequiredUniqueChars = 0;
+        })
                 .AddEntityFrameworkStores<KonusarakOgrenContext>()
                 .AddDefaultTokenProviders();
 

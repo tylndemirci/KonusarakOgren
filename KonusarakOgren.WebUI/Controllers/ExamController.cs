@@ -7,10 +7,12 @@ using KonusarakOgren.Model.Exam;
 using KonusarakOgren.Model.Exam.Request;
 using KonusarakOgren.Model.Exam.Response;
 using KonusarakOgren.ModelMapper.Exam;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KonusarakOgren.WebUI.Controllers
-{
+{  
+    [Authorize]
     public class ExamController : Controller
     {
         private readonly IExamBusiness _examBusiness;

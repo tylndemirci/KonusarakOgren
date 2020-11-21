@@ -6,5 +6,6 @@ namespace KonusarakOgren.Model.Auth
     {
        public string Username { get; set; }
         public string Password { get; set; }
+        
     }
 }

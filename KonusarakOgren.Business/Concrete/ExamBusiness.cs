@@ -92,24 +92,28 @@ namespace KonusarakOgren.Business.Concrete
 
                 htmlDocument.DocumentNode.SelectNodes("//style|//script").ToList().ForEach(n => n.Remove());
 
-                var title = htmlDocument.DocumentNode
-                    .SelectSingleNode(".//h1[@class='content-header__row content-header__hed']")
+                var title = htmlDocument.DocumentNode?
+                    .SelectSingleNode(".//h1[@class='content-header__row content-header__hed']")?
                     .InnerText;
-                titleList.Add(title);
-                var content = htmlDocument.DocumentNode.Descendants("div")
+                if (title!=null)  titleList.Add(title);
+
+                var content = htmlDocument.DocumentNode
+                    .Descendants("div")
                     .FirstOrDefault(x =>
                         x.GetAttributeValue("class", "")
                             .Equals("grid--item body body__container article__body grid-layout__content"))?
                     .FirstChild
                     .InnerText;
-                content += " " + htmlDocument.DocumentNode.Descendants("div")
+                content += " " + htmlDocument.DocumentNode
+                    .Descendants("div")
                     .FirstOrDefault(x =>
                         x.GetAttributeValue("class", "")
                             .Equals("grid--item body body__container article__body grid-layout__content"))?
                     .FirstChild
                     .NextSibling
                     .InnerText;
-                content += " " + htmlDocument.DocumentNode.Descendants("div")
+                content += " " + htmlDocument.DocumentNode
+                    .Descendants("div")
                     .FirstOrDefault(x =>
                         x.GetAttributeValue("class", "")
                             .Equals("grid--item body body__container article__body grid-layout__content"))?
@@ -145,8 +149,8 @@ namespace KonusarakOgren.Business.Concrete
                         .InnerText;
                     decodedString = System.Web.HttpUtility.HtmlDecode(content);
                 }
-
                 contentList.Add(decodedString);
+               
             }
 
             return new ScrapeWiredComResponseModel() {TitleList = titleList, ContentList = contentList};

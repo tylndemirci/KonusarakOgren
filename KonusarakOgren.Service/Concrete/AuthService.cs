@@ -23,19 +23,19 @@ namespace KonusarakOgren.Service.Concrete
         public async Task<ServiceResult> Login(LoginRequestDto dto)
         {
             var userCheck = await _userManager.FindByNameAsync(dto.Username);
-            if (userCheck==null) throw new Exception("User not found.");
+            if (userCheck==null) return new ServiceResult(){Message = "Kullanıcı mevcut değil."};
             await _signInManager.SignOutAsync();
             var result = await _signInManager.PasswordSignInAsync(userCheck, dto.Password, false, false);
-            if (!result.Succeeded) throw new ArgumentException("Something went wrong.");
+            if (!result.Succeeded) return new ServiceResult(){Message = "Bir şeyler ters gitti."};
             return new ServiceResult(){Success = result.Succeeded};
         }
 
         public async Task<ServiceResult> Register(RegisterRequestDto dto)
         {
             var usernameCheck = await _userManager.FindByNameAsync(dto.Username);
-            if (usernameCheck != null) throw new ArgumentException("Username already exists.");
+            if (usernameCheck != null) return new ServiceResult(){Message = "Kullanıcı mevcut."};
             var result = await _userManager.CreateAsync(dto.MapToEntity(), dto.Password);
-            if (!result.Succeeded) throw new ArgumentException("Something went wrong.");
+            if (!result.Succeeded) return new ServiceResult(){Message = "Bir şeyler ters gitti."};
             return new ServiceResult(){Success = true};
         }
 

@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Linq;
+using System.Threading.Tasks;
 using KonusarakOgren.Business.Abstract;
 using KonusarakOgren.Model.Auth;
 using KonusarakOgren.Model.Auth.Response;
@@ -19,13 +20,15 @@ namespace KonusarakOgren.Business.Concrete
 
         public async Task<AuthResponseModel> UserRegister(RegisterViewModel model)
         {
-           await _authService.Register(model.MaptoDto());
-           return new AuthResponseModel(){Success = true};
+          var result = await _authService.Register(model.MaptoDto());
+          if (!string.IsNullOrEmpty(result.Message)) return new AuthResponseModel(){Message = result.Message};
+              return new AuthResponseModel(){Success = true};
         }
 
         public async Task<AuthResponseModel> UserLogin(LoginViewModel model)
         {
-            await _authService.Login(model.MapToDto());
+            var result = await _authService.Login(model.MapToDto());
+            if (!string.IsNullOrEmpty(result.Message)) return new AuthResponseModel(){Message = result.Message};
             return new AuthResponseModel() {Success = true};
         }
 

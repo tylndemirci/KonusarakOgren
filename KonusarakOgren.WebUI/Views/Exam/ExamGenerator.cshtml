@@ -3,7 +3,7 @@
     <div class="row">
         <table class="table-sm w-75">
 
-           <tr style="font-size: 20px; border: 2px solid black">
+            <tr style="font-size: 20px; border: 2px solid black">
                 <th class="pl-3">#</th>
                 <th>Başlık</th>
                 <th></th>
@@ -35,9 +35,17 @@
                     </form>
                 </tr>
             }
-
-
-
         </table>
-    </div>
+        @if (Model.TitleList.Count < 4)
+                   {
+                       <div class="container">
+                           <div class="row">
+                               <div class="col justify-content-center font-weight-bold"> <p>Şu anda yalnızca şu sayıda içerik sağlanabiliyor : @Model.TitleList.Count</p> </div>
+                           </div>
+                       </div>
+                    
+                      
+                   }
+        
+         </div>
 </div>

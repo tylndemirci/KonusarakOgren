@@ -7,7 +7,7 @@ namespace KonusarakOgren.Model.Auth
         [Required] public string Username { get; set; }
         [Required] public string Password { get; set; }
 
-        [Compare("Password", ErrorMessage = "Passwords does not match!")]
+        [Compare("Password", ErrorMessage = "Şifreler eşleşmiyor.")]
         public string ConfirmPassword { get; set; }
     }
 }
