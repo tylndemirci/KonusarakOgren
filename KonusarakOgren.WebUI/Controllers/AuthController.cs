@@ -26,7 +26,7 @@ namespace KonusarakOgren.WebUI.Controllers
         {
             if (!ModelState.IsValid) return View(model);
             
-           _authBusiness.UserLogin(model.Username, model.Password);
+           _authBusiness.UserLogin(model);
            
             return RedirectToAction();
         }

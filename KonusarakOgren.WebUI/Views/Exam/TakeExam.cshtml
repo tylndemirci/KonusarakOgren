@@ -3,24 +3,37 @@
 {
     <script>
             $(function(){
-         
-    $(".color1").click(function(){
+                 for (let i = 0; i < @Model.ExamQuestions.Count; i++) {
+                     let selectColor = ".color" + (i);
+                     console.log(selectColor)
+    $(selectColor).click(function(){
         $(this).css("background-color", "yellow")
-        $(".color1").not(this).css("background-color", "")
+        $(selectColor).not(this).css("background-color", "")
     })
-                $(".color2").click(function(){
-                    $(this).css("background-color", "yellow")
-                    $(".color2").not(this).css("background-color", "")
-                })
-                $(".color3").click(function(){
-                    $(this).css("background-color", "yellow")
-                    $(".color3").not(this).css("background-color", "")
-                })
-                $(".color4").click(function(){
-                    $(this).css("background-color", "yellow")
-                    $(".color4").not(this).css("background-color", "")
-                })
-    
+   }
+
+    var myArray = [];
+
+    @foreach (var d in Model.ExamQuestions)
+    {
+        @:myArray.push("@d.Answer");
+    }
+
+    $("button").click(function (){
+   
+      let selectColor = ".color1";
+       let selectInfo = selectColor + "input";
+                 if ($(selectColor).val() === myArray[0]) {
+               console.log($(selectInfo).val())
+         $(selectColor).css("background-color", "green")
+         $(selectColor).not(this).css("background-color", "")
+           } else {
+                     console.log($(selectInfo).val())
+          $(selectColor).css("background-color", "red")
+          $(selectColor).not(this).css("background-color", "")
+           }
+       
+                });
             });
         </script>
 }
@@ -33,38 +46,50 @@
     </div>
     @for (int i = 0; i < Model.ExamQuestions.Count; i+=2)
     {
+        var idAnswerA = $"Answer{i}A";
+        var idAnswerB = $"Answer{i}B";
+        var idAnswerC = $"Answer{i}C";
+        var idAnswerD = $"Answer{i}D";
+        var idAnswerA2 = $"Answer{i+1}A";
+        var idAnswerB2 = $"Answer{i+1}B";
+        var idAnswerC2 = $"Answer{i+1}C";
+        var idAnswerD2 = $"Answer{i+1}D";
+        
+        var Name1 = $"Name{i}A";
+        var Name2 = $"Name{i}B";
+        
         <div class="row mt-4">
             <div class="col pr-5 pl-0">
                 <p>@(i+1)) @Model.ExamQuestions[i].Question</p>
                 <ul class="list-unstyled">
                     <li>
                         <div class="form-check p-0">
-                            <input class="form-check-input " type="radio" name="A" id="A" value="A" style="display: none;" checked>
-                            <label class="form-check-label border border-dark color@(i+1) pl-4 pr-4 pt-1 pb-1 mb-1" for="A" style="width: 100%">
+                            <input class="form-check-input color@(i)input" type="radio" name="@Name1" id="@idAnswerA" value="A" >
+                            <label class="form-check-label border border-dark color@(i) pl-4 pr-4 pt-1 pb-1 mb-1" for="@idAnswerA" style="width: 100%">
                                 A) @Model.ExamQuestions[i].OptionA
                             </label>
                         </div>
                     </li>
                     <li>
                         <div class="form-check p-0">
-                            <input class="form-check-input " type="radio" name="A" id="B" value="B"  style="display: none;" checked>
-                            <label class="form-check-label border border-dark color@(i+1) pl-4 pr-4 pt-1 pb-1 mb-1" for="B" style="width: 100%">
+                            <input class="form-check-input color@(i)input" type="radio" name="@Name1" id="@idAnswerB" value="B" >
+                            <label class="form-check-label border border-dark color@(i) pl-4 pr-4 pt-1 pb-1 mb-1" for="@idAnswerB" style="width: 100%">
                                 A) @Model.ExamQuestions[i].OptionB
                             </label>
                         </div>
                     </li>
                     <li>
                         <div class="form-check p-0">
-                            <input class="form-check-input " type="radio" name="A" id="C" value="C"  style="display: none;" checked>
-                            <label class="form-check-label border border-dark color@(i+1) pl-4 pr-4 pt-1 pb-1 mb-1" for="C" style="width: 100%">
+                            <input class="form-check-input color@(i+1)input" type="radio" name="@Name1" id="@idAnswerC" value="C" >
+                            <label class="form-check-label border border-dark color@(i) pl-4 pr-4 pt-1 pb-1 mb-1" for="@idAnswerC" style="width: 100%">
                                 A) @Model.ExamQuestions[i].OptionC
                             </label>
                         </div>
                     </li>
                     <li>
                         <div class="form-check p-0">
-                            <input class="form-check-input " type="radio" name="A" id="D" value="D"  style="display: none;" checked>
-                            <label class="form-check-label border border-dark color@(i+1) pl-4 pr-4 pt-1 pb-1 mb-1" for="D" style="width: 100%">
+                            <input class="form-check-input color@(i)input" type="radio" name="@Name1" id="@idAnswerD" value="D" >
+                            <label class="form-check-label border border-dark color@(i) pl-4 pr-4 pt-1 pb-1 mb-1" for="@idAnswerD" style="width: 100%">
                                 A) @Model.ExamQuestions[i].OptionD
                             </label>
                         </div>
@@ -76,8 +101,8 @@
                             <ul class="list-unstyled ">
                                 <li>
                                     <div class="form-check p-0">
-                                        <input class="form-check-input " type="radio" name="A" id="A" value="A"  style="display: none;" checked>
-                                        <label class="form-check-label border border-dark color@(i+2) pl-4 pr-4 pt-1 pb-1 mb-1" for="A" style="width: 100%">
+                                        <input class="form-check-input color@(+1)input" type="radio" name="@Name2" id="@idAnswerA2" value="A"  >
+                                        <label class="form-check-label border border-dark color@(i+1) pl-4 pr-4 pt-1 pb-1 mb-1" for="@idAnswerA2" style="width: 100%" >
                                             A) @Model.ExamQuestions[i+1].OptionA
             
                                         </label>
@@ -85,24 +110,24 @@
                                 </li>
                                 <li>
                                     <div class="form-check p-0">
-                                        <input class="form-check-input " type="radio" name="A" id="B" value="B"  style="display: none;" checked>
-                                        <label class="form-check-label border border-dark color@(i+2) pl-4 pr-4 pt-1 pb-1 mb-1" for="B" style="width: 100%">
+                                        <input class="form-check-input color@(i+1)input" type="radio" name="@Name2" id="@idAnswerB2" value="B"  >
+                                        <label class="form-check-label border border-dark color@(i+1) pl-4 pr-4 pt-1 pb-1 mb-1" for="@idAnswerB2" style="width: 100%">
                                             B) @Model.ExamQuestions[i+1].OptionB
                                         </label>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="form-check p-0">
-                                        <input class="form-check-input " type="radio" name="A" id="C" value="C"  style="display: none;" checked>
-                                        <label class="form-check-label border border-dark color@(i+2) pl-4 pr-4 pt-1 pb-1 mb-1" for="C" style="width: 100%">
+                                        <input class="form-check-input color@(i+1)input" type="radio" name="@Name2" id="@idAnswerC2" value="C" >
+                                        <label class="form-check-label border border-dark color@(i+1) pl-4 pr-4 pt-1 pb-1 mb-1" for="@idAnswerC2" style="width: 100%">
                                             C) @Model.ExamQuestions[i+1].OptionC
                                         </label>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="form-check p-0">
-                                        <input class="form-check-input " type="radio" name="A" id="D" value="D"  style="display: none;" checked>
-                                        <label class="form-check-label border border-dark color@(i+2) pl-4 pr-4 pt-1 pb-1 mb-1" for="D" style="width: 100%">
+                                        <input class="form-check-input color@(i+1)input" type="radio" name="@Name2" id="@idAnswerD2" value="D"  >
+                                        <label class="form-check-label border border-dark color@(i+1) pl-4 pr-4 pt-1 pb-1 mb-1" for="@idAnswerD2" style="width: 100%">
                                             D) @Model.ExamQuestions[i+1].OptionD
                                         </label>
                                     </div>

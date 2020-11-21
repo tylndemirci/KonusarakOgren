@@ -13,6 +13,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Concrete" t="Include">
           <e p="AuthBusiness.cs" t="Include" />
+          <e p="AuthBusinessValidation.cs" t="Include" />
           <e p="ExamBusiness.cs" t="Include" />
           <e p="ExamBusinessValidation.cs" t="Include" />
         </e>
@@ -43,6 +44,10 @@
         </e>
       </e>
       <e p="KonusarakOgren.DTO" t="IncludeRecursive">
+        <e p="Auth" t="Include">
+          <e p="LoginRequestDto.cs" t="Include" />
+          <e p="RegisterRequestDto.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Exam" t="Include">
           <e p="ExamCreateRequestDto.cs" t="Include" />
@@ -91,7 +96,6 @@
         <e p="Entities" t="Include">
           <e p="Exam.cs" t="Include" />
           <e p="ExamQuestion.cs" t="Include" />
-          <e p="UserExams.cs" t="Include" />
         </e>
         <e p="KonusarakOgren.Entity.csproj" t="IncludeRecursive" />
         <e p="KonusarakOgrenContext.cs" t="Include" />
@@ -159,10 +163,12 @@
       </e>
       <e p="KonusarakOgren.Service" t="IncludeRecursive">
         <e p="Abstract" t="Include">
+          <e p="IAuthService.cs" t="Include" />
           <e p="IExamService.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Concrete" t="Include">
+          <e p="AuthService.cs" t="Include" />
           <e p="ExamService.cs" t="Include" />
         </e>
         <e p="KonusarakOgren.Service.csproj" t="IncludeRecursive" />
@@ -189,6 +195,8 @@
           <e p="ExamController.cs" t="Include" />
         </e>
         <e p="konusarakogren.db" t="Include" />
+        <e p="konusarakogren.db-shm" t="Include" />
+        <e p="konusarakogren.db-wal" t="Include" />
         <e p="KonusarakOgren.WebUI.csproj" t="IncludeRecursive" />
         <e p="Migrations" t="Include">
           <e p="20201120120552_Initial.cs" t="Include" />

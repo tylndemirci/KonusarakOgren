@@ -1,9 +1,11 @@
-﻿namespace KonusarakOgren.Business.Abstract
+﻿using KonusarakOgren.Model.Auth;
+
+namespace KonusarakOgren.Business.Abstract
 {
     public interface IAuthBusiness
     {
-        public void UserRegister(string username, string password);
-        public void UserLogin(string username, string password);
-        public void Logout();
+     void UserRegister(string username, string password);
+       void UserLogin(LoginViewModel model);
+       void Logout();
     }
 }

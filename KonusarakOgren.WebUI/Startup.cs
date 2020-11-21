@@ -44,6 +44,7 @@ namespace KonusarakOgren.WebUI
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddScoped(typeof(IGenericDal<>), typeof(EfGenericDal<>));
             services.AddTransient<IExamService, ExamService>();
+            services.AddTransient<IAuthService, AuthService>();
             
             services.AddControllersWithViews();
 

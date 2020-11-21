@@ -22,14 +22,44 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33d6e51d-7bc3-4869-ae86-f1519003d1db" name="Default Changelist" comment="TakeExam service, business and controller done&#10;NavBar takes value for every exam that was created.">
+    <list default="true" id="33d6e51d-7bc3-4869-ae86-f1519003d1db" name="Default Changelist" comment="TakeExam page and jquery color checked options">
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/AuthBusinessValidation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DTO/Auth/LoginRequestDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.DTO/Auth/RegisterRequestDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/Abstract/IAuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KonusarakOgren.Service/Concrete/AuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.KonusarakOgren/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KonusarakOgren/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KonusarakOgren/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KonusarakOgren/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/Abstract/IAuthBusiness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/Abstract/IAuthBusiness.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/AuthBusiness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/AuthBusiness.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Business/obj/Debug/netcoreapp3.1/KonusarakOgren.Business.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/Debug/netcoreapp3.1/KonusarakOgren.DtoMapper.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.DtoMapper/obj/Debug/netcoreapp3.1/KonusarakOgren.DtoMapper.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Entity/Entities/UserExams.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Entity/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Entity/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Entity/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Entity/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Entity/obj/Debug/netcoreapp3.1/KonusarakOgren.Entity.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Entity/obj/Debug/netcoreapp3.1/KonusarakOgren.Entity.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Entity/obj/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Entity/obj/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Entity/obj/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Entity/obj/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.Service/obj/Debug/netcoreapp3.1/KonusarakOgren.Service.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.Service/obj/Debug/netcoreapp3.1/KonusarakOgren.Service.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/Controllers/ExamController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/Controllers/ExamController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/Views/Exam/TakeExam.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/Views/Exam/TakeExam.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Business.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.Entity.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/bin/Debug/netcoreapp3.1/KonusarakOgren.WebUI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/konusarakogren.db" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/konusarakogren.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KonusarakOgren.WebUI/obj/Debug/netcoreapp3.1/KonusarakOgren.WebUI.csprojAssemblyReference.cache" afterDir="false" />
@@ -60,14 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamDeleteResponseModel.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Controllers/AuthController.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamGetAllResponsoDto.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamGetAllResponseDto.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamQuestionGetAllResponseDto.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamGetByResponseModel.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamQuestioneResponseDto.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamGetByResponseDto.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Exam/ExamModelMapper.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Exam/ExamGeneratorModelMapper.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/ListExamsViewModel.cs" />
@@ -83,7 +105,6 @@
         <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamQuestionCreateResponseDto.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamCreateResponseModel.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/ExamQuestionViewModel.cs" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Startup.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/CreateExamViewModel.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Request/ExamCreateRequestModel.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamGetResponseDto.cs" />
@@ -97,10 +118,8 @@
         <option value="$PROJECT_DIR$/KonusarakOgren.Entity/Concrete/EfGenericDal.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Entity/Entities/ExamQuestion.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Views/Exam/CreateExam.cshtml" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Controllers/ExamController.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Model/NavBar/NavBarExamIdsResponseModel.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Views/Shared/Components/NavBar/Default.cshtml" />
-        <option value="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/ExamBusiness.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.Model/Exam/Response/ExamGetExamResponseModel.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamGetExamResponseDto.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Exam/Response/ExamQuestionResponseDto.cs" />
@@ -110,6 +129,17 @@
         <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Components/NavBarViewComponent/NavBarViewComponent.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.DtoMapper/Exam/ExamDtoMapper.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.ModelMapper/Exam/ExamMapperToModel.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Controllers/ExamController.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/ExamBusiness.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Business/Abstract/IAuthBusiness.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Auth/LoginRequestDto.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.DTO/Auth/RegisterRequestDto.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/AuthBusinessValidation.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Business/Concrete/AuthBusiness.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Service/Abstract/IAuthService.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.Service/Concrete/AuthService.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Controllers/AuthController.cs" />
+        <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Startup.cs" />
         <option value="$PROJECT_DIR$/KonusarakOgren.WebUI/Views/Exam/TakeExam.cshtml" />
       </list>
     </option>
@@ -189,7 +219,8 @@
       <workItem from="1605870192901" duration="4744000" />
       <workItem from="1605877431812" duration="32026000" />
       <workItem from="1605914888867" duration="325000" />
-      <workItem from="1605945217050" duration="7620000" />
+      <workItem from="1605945217050" duration="8065000" />
+      <workItem from="1605957605288" duration="6448000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1605879919984</created>
@@ -226,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605948613370</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="TakeExam page and jquery color checked options">
+      <created>1605954890114</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605954890114</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +282,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -252,109 +291,110 @@
     <MESSAGE value="ExamService is done" />
     <MESSAGE value="CheckList = generateExam, createExam, listExams, deleteExams" />
     <MESSAGE value="TakeExam service, business and controller done&#10;NavBar takes value for every exam that was created." />
-    <option name="LAST_COMMIT_MESSAGE" value="TakeExam service, business and controller done&#10;NavBar takes value for every exam that was created." />
+    <MESSAGE value="TakeExam page and jquery color checked options" />
+    <option name="LAST_COMMIT_MESSAGE" value="TakeExam page and jquery color checked options" />
   </component>
   <component name="WindowStateProjectService">
     <state width="492" height="464" key="DebuggerActiveHint" timestamp="1605948475129">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="492" height="464" key="DebuggerActiveHint/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605948475129" />
-    <state width="2517" height="369" key="GridCell.Tab.0.bottom" timestamp="1605954644637">
+    <state width="2517" height="369" key="GridCell.Tab.0.bottom" timestamp="1605964005103">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644637" />
-    <state width="2517" height="369" key="GridCell.Tab.0.center" timestamp="1605954644636">
+    <state width="2517" height="369" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964005103" />
+    <state width="2517" height="369" key="GridCell.Tab.0.center" timestamp="1605964005103">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644636" />
-    <state width="2517" height="369" key="GridCell.Tab.0.left" timestamp="1605954644636">
+    <state width="2517" height="369" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964005103" />
+    <state width="2517" height="369" key="GridCell.Tab.0.left" timestamp="1605964005103">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644636" />
-    <state width="2517" height="369" key="GridCell.Tab.0.right" timestamp="1605954644636">
+    <state width="2517" height="369" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964005103" />
+    <state width="2517" height="369" key="GridCell.Tab.0.right" timestamp="1605964005103">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644636" />
-    <state width="2517" height="369" key="GridCell.Tab.1.bottom" timestamp="1605954644454">
+    <state width="2517" height="369" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964005103" />
+    <state width="2517" height="369" key="GridCell.Tab.1.bottom" timestamp="1605964004879">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644454" />
-    <state width="2517" height="369" key="GridCell.Tab.1.center" timestamp="1605954644454">
+    <state width="2517" height="369" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004879" />
+    <state width="2517" height="369" key="GridCell.Tab.1.center" timestamp="1605964004879">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.1.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644454" />
-    <state width="2517" height="369" key="GridCell.Tab.1.left" timestamp="1605954644454">
+    <state width="2517" height="369" key="GridCell.Tab.1.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004879" />
+    <state width="2517" height="369" key="GridCell.Tab.1.left" timestamp="1605964004879">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.1.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644454" />
-    <state width="2517" height="369" key="GridCell.Tab.1.right" timestamp="1605954644454">
+    <state width="2517" height="369" key="GridCell.Tab.1.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004879" />
+    <state width="2517" height="369" key="GridCell.Tab.1.right" timestamp="1605964004879">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644454" />
-    <state width="2517" height="369" key="GridCell.Tab.2.bottom" timestamp="1605954644454">
+    <state width="2517" height="369" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004879" />
+    <state width="2517" height="369" key="GridCell.Tab.2.bottom" timestamp="1605964004879">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.2.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644454" />
-    <state width="2517" height="369" key="GridCell.Tab.2.center" timestamp="1605954644454">
+    <state width="2517" height="369" key="GridCell.Tab.2.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004879" />
+    <state width="2517" height="369" key="GridCell.Tab.2.center" timestamp="1605964004879">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.2.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644454" />
-    <state width="2517" height="369" key="GridCell.Tab.2.left" timestamp="1605954644454">
+    <state width="2517" height="369" key="GridCell.Tab.2.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004879" />
+    <state width="2517" height="369" key="GridCell.Tab.2.left" timestamp="1605964004879">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.2.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644454" />
-    <state width="2517" height="369" key="GridCell.Tab.2.right" timestamp="1605954644454">
+    <state width="2517" height="369" key="GridCell.Tab.2.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004879" />
+    <state width="2517" height="369" key="GridCell.Tab.2.right" timestamp="1605964004879">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.2.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644454" />
-    <state width="2517" height="369" key="GridCell.Tab.3.bottom" timestamp="1605954644455">
+    <state width="2517" height="369" key="GridCell.Tab.2.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004879" />
+    <state width="2517" height="369" key="GridCell.Tab.3.bottom" timestamp="1605964004880">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.3.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644455" />
-    <state width="2517" height="369" key="GridCell.Tab.3.center" timestamp="1605954644455">
+    <state width="2517" height="369" key="GridCell.Tab.3.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004880" />
+    <state width="2517" height="369" key="GridCell.Tab.3.center" timestamp="1605964004880">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.3.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644455" />
-    <state width="2517" height="369" key="GridCell.Tab.3.left" timestamp="1605954644454">
+    <state width="2517" height="369" key="GridCell.Tab.3.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004880" />
+    <state width="2517" height="369" key="GridCell.Tab.3.left" timestamp="1605964004880">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.3.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644454" />
-    <state width="2517" height="369" key="GridCell.Tab.3.right" timestamp="1605954644455">
+    <state width="2517" height="369" key="GridCell.Tab.3.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004880" />
+    <state width="2517" height="369" key="GridCell.Tab.3.right" timestamp="1605964004880">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.3.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644455" />
-    <state width="2517" height="369" key="GridCell.Tab.4.bottom" timestamp="1605954644455">
+    <state width="2517" height="369" key="GridCell.Tab.3.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004880" />
+    <state width="2517" height="369" key="GridCell.Tab.4.bottom" timestamp="1605964004880">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.4.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644455" />
-    <state width="2517" height="369" key="GridCell.Tab.4.center" timestamp="1605954644455">
+    <state width="2517" height="369" key="GridCell.Tab.4.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004880" />
+    <state width="2517" height="369" key="GridCell.Tab.4.center" timestamp="1605964004880">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.4.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644455" />
-    <state width="2517" height="369" key="GridCell.Tab.4.left" timestamp="1605954644455">
+    <state width="2517" height="369" key="GridCell.Tab.4.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004880" />
+    <state width="2517" height="369" key="GridCell.Tab.4.left" timestamp="1605964004880">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.4.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644455" />
-    <state width="2517" height="369" key="GridCell.Tab.4.right" timestamp="1605954644455">
+    <state width="2517" height="369" key="GridCell.Tab.4.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004880" />
+    <state width="2517" height="369" key="GridCell.Tab.4.right" timestamp="1605964004880">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="369" key="GridCell.Tab.4.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954644455" />
+    <state width="2517" height="369" key="GridCell.Tab.4.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605964004880" />
     <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size" timestamp="1605881769959">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605881769959" />
-    <state x="1114" y="401" key="RiderGenerateDialog" timestamp="1605887626955">
+    <state x="1114" y="401" key="RiderGenerateDialog" timestamp="1605961862788">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1114" y="401" key="RiderGenerateDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605887626955" />
+    <state x="1114" y="401" key="RiderGenerateDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605961862788" />
     <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog" timestamp="1605909039562">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605909039562" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1605948618398">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1605954892578">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605948618398" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605954892578" />
     <state width="1288" height="708" key="XDebugger.FullValuePopup" timestamp="1605827313776">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -26,10 +26,10 @@ namespace KonusarakOgren.WebUI.Controllers
             var articles = _examBusiness.ScrapeWiredCom()
                 .GetAwaiter()
                 .GetResult();
-            
+
             return View(articles);
         }
-        
+
         public IActionResult ListExams()
         {
             var exams = _examBusiness.GetAllExams();
@@ -56,22 +56,19 @@ namespace KonusarakOgren.WebUI.Controllers
             return View(model);
         }
 
-       
+
         public IActionResult TakeExam(int examId)
         {
             var exam = _examBusiness.GetExam(examId);
             return View(exam);
         }
 
-      
+
         public IActionResult DeleteExam(int examId)
         {
             _examBusiness.DeleteExam(examId);
-            
+
             return RedirectToAction("ListExams", "Exam");
         }
-
-
-      
     }
 }
