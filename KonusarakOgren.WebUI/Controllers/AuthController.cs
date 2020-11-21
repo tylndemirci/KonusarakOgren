@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace KonusarakOgren.WebUI.Controllers
 {
+    [Authorize]
     public class AuthController : Controller
     {
         private readonly IAuthBusiness _authBusiness;
@@ -25,9 +26,9 @@ namespace KonusarakOgren.WebUI.Controllers
         public IActionResult Login(LoginViewModel model)
         {
             if (!ModelState.IsValid) return View(model);
-            
-           _authBusiness.UserLogin(model);
-           
+
+            _authBusiness.UserLogin(model);
+
             return RedirectToAction();
         }
 

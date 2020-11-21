@@ -1,8 +1,9 @@
-﻿using System;
+﻿using System.Threading.Tasks;
 using KonusarakOgren.Business.Abstract;
 using KonusarakOgren.Model.Auth;
+using KonusarakOgren.Model.Auth.Response;
+using KonusarakOgren.ModelMapper.Auth;
 using KonusarakOgren.Service.Abstract;
-using Microsoft.AspNetCore.Identity;
 
 namespace KonusarakOgren.Business.Concrete
 {
@@ -16,19 +17,22 @@ namespace KonusarakOgren.Business.Concrete
         }
 
 
-        public async void UserRegister(string username, string password)
+        public async Task<AuthResponseModel> UserRegister(RegisterViewModel model)
         {
-           
+           await _authService.Register(model.MaptoDto());
+           return new AuthResponseModel(){Success = true};
         }
 
-        public async void UserLogin(LoginViewModel model)
+        public async Task<AuthResponseModel> UserLogin(LoginViewModel model)
         {
-          
+            await _authService.Login(model.MapToDto());
+            return new AuthResponseModel() {Success = true};
         }
 
-        public async void Logout()
+        public async Task<AuthResponseModel> Logout()
         {
-            
+           await _authService.Logout();
+            return new AuthResponseModel() {Success = true};
         }
     }
 }

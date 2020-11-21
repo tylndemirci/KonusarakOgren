@@ -4,7 +4,7 @@ namespace KonusarakOgren.Model.Auth
 {
     public class LoginViewModel
     {
-        [Required] public string Username { get; set; }
-        [Required] public string Password { get; set; }
+       public string Username { get; set; }
+        public string Password { get; set; }
     }
 }

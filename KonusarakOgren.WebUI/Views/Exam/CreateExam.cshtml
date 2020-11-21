@@ -1,90 +1,103 @@
 ﻿@model KonusarakOgren.Model.Exam.Request.ExamCreateRequestModel
 <div class="container mt-5">
-<form asp-controller="Exam" asp-action="CreateExam" method="post">
-<div class="row border border-dark rounded">
-      @Html.HiddenFor(x=>x.Title)
-    <h4 class="mb-auto mt-auto p-2 ml-3 ">@Model.Title</h4>
-</div>
-<div class="row border border-dark mt-3 rounded">
-    @Html.HiddenFor(x=>x.Content)
-    <p class="mb-auto mt-auto p-2 ml-3">
-        @Model.Content
-    </p>
-</div>
-@for (int i = 0; i < 4; i++)
-{
-    
+    <form asp-controller="Exam" asp-action="CreateExam" method="post">
+        <div class="row border border-dark rounded">
+            @Html.HiddenFor(x => x.Title)
+            <h4 class="mb-auto mt-auto p-2 ml-3 ">@Model.Title</h4>
+        </div>
+        <div class="row border border-dark mt-3 rounded">
+            @Html.HiddenFor(x => x.Content)
+            <p class="mb-auto mt-auto p-2 ml-3">
+                @Model.Content
+            </p>
+        </div>
+        @for (int i = 0; i < 4; i++)
+        {
+            <div class="row mt-4">
+                <div class="col input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text border-dark font-weight-bold">Soru @(i + 1)</div>
+                    </div>
+                    <input type="text" class="form-control border-dark" asp-for="@Model.ExamQuestions[i].Question" required>
+                    <span asp-validation-for="@Model.ExamQuestions[i].Question" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mt-1">
 
-<div class="row mt-4">
-    <div class="col input-group">
-        <div class="input-group-prepend">
-            <div class="input-group-text border-dark font-weight-bold">Soru @(i+1)</div>
-        </div>
-        <input type="text" class="form-control border-dark" asp-for="@Model.ExamQuestions[i].Question">
-    </div>
-</div>
-<div class="row mt-1">
+                <div class="col input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text border-dark font-weight-bold">A)</div>
+                    </div>
+                    <input type="text" class="form-control border-dark" asp-for="@Model.ExamQuestions[i].OptionA" required>
+                    <span asp-validation-for="@Model.ExamQuestions[i].OptionA" class="text-danger"></span>
+                </div>
 
-    <div class="col input-group">
-        <div class="input-group-prepend">
-            <div class="input-group-text border-dark font-weight-bold">A)</div>
-        </div>
-        <input type="text" class="form-control border-dark" asp-for="@Model.ExamQuestions[i].OptionA">
-    </div>
+                <div class="col input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text border-dark font-weight-bold">B)</div>
+                    </div>
+                    <input type="text" class="form-control border-dark" asp-for="@Model.ExamQuestions[i].OptionB" required>
+                    <span asp-validation-for="@Model.ExamQuestions[i].OptionB" class="text-danger"></span>
 
-    <div class="col input-group">
-        <div class="input-group-prepend">
-            <div class="input-group-text border-dark font-weight-bold">B)</div>
-        </div>
-        <input type="text" class="form-control border-dark" asp-for="@Model.ExamQuestions[i].OptionB">
-    </div>
-</div>
-<div class="row mt-1">
-    <div class="col input-group">
-        <div class="input-group-prepend">
-            <div class="input-group-text border-dark font-weight-bold">C)</div>
-        </div>
-        <input type="text" class="form-control border-dark" asp-for="@Model.ExamQuestions[i].OptionC">
-    </div>
-    <div class="col input-group">
-        <div class="input-group-prepend">
-            <div class="input-group-text border-dark font-weight-bold">D)</div>
-        </div>
-        <input type="text" class="form-control border-dark" asp-for="@Model.ExamQuestions[i].OptionD">
-    </div>
-</div>
-<div class="row mt-1">
-    <div class="col"></div>
-    <div class="col-6 form-control">
-        <span class="font-weight-bold">Doğru Cevap Seç</span>
-        <div class="form-check form-check-inline ml-4">
-            <input class="form-check-input" type="radio" asp-for="@Model.ExamQuestions[i].Answer" value="A">
-            <label class="form-check-label font-weight-bold">A</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" asp-for="@Model.ExamQuestions[i].Answer" value="B">
-            <label class="form-check-label font-weight-bold">B</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" asp-for="@Model.ExamQuestions[i].Answer" value="C">
-            <label class="form-check-label font-weight-bold">C</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" asp-for="@Model.ExamQuestions[i].Answer" value="D">
-            <label class="form-check-label font-weight-bold">D</label>
-        </div>
-    </div>
-    <div class="col"></div>
-</div>
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text border-dark font-weight-bold">C)</div>
+                    </div>
+                    <input type="text" class="form-control border-dark" asp-for="@Model.ExamQuestions[i].OptionC" required>
+                    <span asp-validation-for="@Model.ExamQuestions[i].OptionC" class="text-danger"></span>
 
-}
-<div class="row pb-5 pt-5">
-    <div class="col"></div>
-    <div class="col-6">
-        <button class="btn btn-dark  btn-lg btn-block pt-4 pb-4">SINAV OLUŞTUR</button>
-    </div>
-    <div class="col"></div>
-</div>
-</form>
+                </div>
+                <div class="col input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text border-dark font-weight-bold">D)</div>
+                    </div>
+                    <input type="text" class="form-control border-dark" asp-for="@Model.ExamQuestions[i].OptionD" required>
+                    <span asp-validation-for="@Model.ExamQuestions[i].OptionD" class="text-danger"></span>
+
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col"></div>
+                <div class="col-6 form-control">
+                    <span class="font-weight-bold">Doğru Cevap Seç</span>
+                    <div class="form-check form-check-inline ml-4">
+                        <input class="form-check-input" type="radio" asp-for="@Model.ExamQuestions[i].Answer" value="A" required>
+
+                        <label class="form-check-label font-weight-bold">A</label>
+                        <span asp-validation-for="@Model.ExamQuestions[i].Answer" class="text-danger"></span>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="@Model.ExamQuestions[i].Answer" value="B" required>
+                        <label class="form-check-label font-weight-bold">B</label>
+                        <span asp-validation-for="@Model.ExamQuestions[i].Answer" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="@Model.ExamQuestions[i].Answer" value="C" required>
+                        <label class="form-check-label font-weight-bold">C</label>
+                        <span asp-validation-for="@Model.ExamQuestions[i].Answer" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="@Model.ExamQuestions[i].Answer" value="D" required>
+                        <label class="form-check-label font-weight-bold">D</label>
+                        <span asp-validation-for="@Model.ExamQuestions[i].Answer" class="text-danger"></span>
+
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        }
+        <div class="row pb-5 pt-5">
+            <div class="col"></div>
+            <div class="col-6">
+                <button class="btn btn-dark  btn-lg btn-block pt-4 pb-4">SINAV OLUŞTUR</button>
+            </div>
+            <div class="col"></div>
+        </div>
+    </form>
 
 </div>

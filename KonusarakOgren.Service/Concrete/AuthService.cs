@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using KonusarakOgren.Core;
 using KonusarakOgren.DTO.Auth;
+using KonusarakOgren.DtoMapper.Auth;
 using KonusarakOgren.Service.Abstract;
 using Microsoft.AspNetCore.Identity;
 
@@ -33,12 +34,7 @@ namespace KonusarakOgren.Service.Concrete
         {
             var usernameCheck = await _userManager.FindByNameAsync(dto.Username);
             if (usernameCheck != null) throw new ArgumentException("Username already exists.");
-
-            // var mapEntity = usernameCheck.MapToEntity();
-            var identity = new IdentityUser();
-            identity.UserName = dto.Username;
-            
-            var result = await _userManager.CreateAsync(identity, dto.Password);
+            var result = await _userManager.CreateAsync(dto.MapToEntity(), dto.Password);
             if (!result.Succeeded) throw new ArgumentException("Something went wrong.");
             return new ServiceResult(){Success = true};
         }

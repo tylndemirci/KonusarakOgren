@@ -70,6 +70,9 @@
         </e>
       </e>
       <e p="KonusarakOgren.DtoMapper" t="IncludeRecursive">
+        <e p="Auth" t="Include">
+          <e p="AuthDtoMapper.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Exam" t="Include">
           <e p="ExamDtoMapper.cs" t="Include" />
@@ -111,6 +114,9 @@
         <e p="Auth" t="Include">
           <e p="LoginViewModel.cs" t="Include" />
           <e p="RegisterViewModel.cs" t="Include" />
+          <e p="Response" t="Include">
+            <e p="AuthResponseModel.cs" t="Include" />
+          </e>
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Exam" t="Include">
@@ -147,6 +153,10 @@
         </e>
       </e>
       <e p="KonusarakOgren.ModelMapper" t="IncludeRecursive">
+        <e p="Auth" t="Include">
+          <e p="AuthMapperToDto.cs" t="Include" />
+          <e p="AuthMapperToModel.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Exam" t="Include">
           <e p="ExamMapperToDto.cs" t="Include" />
@@ -251,6 +261,7 @@
           <e p="favicon.ico" t="Include" />
           <e p="js" t="Include">
             <e p="site.js" t="Include" />
+            <e p="takeExam.js" t="Include" />
           </e>
           <e p="lib" t="Include">
             <e p="bootstrap" t="Include">

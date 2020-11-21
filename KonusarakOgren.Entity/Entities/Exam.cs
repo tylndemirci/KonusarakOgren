@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace KonusarakOgren.Entity.Entities
 {
@@ -10,7 +11,6 @@ namespace KonusarakOgren.Entity.Entities
         public string DateTime { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
-       
         public virtual List<ExamQuestion> ExamQuestions { get; set; }
     }
 }
