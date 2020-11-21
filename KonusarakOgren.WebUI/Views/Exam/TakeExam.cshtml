@@ -1,27 +1,123 @@
-﻿@section Scripts
+﻿@model KonusarakOgren.Model.Exam.Response.ExamGetExamResponseModel
+@section Scripts
 {
-    <script >
-    function myFunc(){
-             
-                    alert("sa")
-                    $(".bum").css("background-color", "yellow")
-             
-            }
-    </script>
+    <script>
+            $(function(){
+         
+    $(".color1").click(function(){
+        $(this).css("background-color", "yellow")
+        $(".color1").not(this).css("background-color", "")
+    })
+                $(".color2").click(function(){
+                    $(this).css("background-color", "yellow")
+                    $(".color2").not(this).css("background-color", "")
+                })
+                $(".color3").click(function(){
+                    $(this).css("background-color", "yellow")
+                    $(".color3").not(this).css("background-color", "")
+                })
+                $(".color4").click(function(){
+                    $(this).css("background-color", "yellow")
+                    $(".color4").not(this).css("background-color", "")
+                })
+    
+            });
+        </script>
 }
-
-<div class="container p-5">
+<div class="container pt-5">
     <div class="row justify-content-center">
-        <h3 class="">The US Could Soon Ban the Selling of Carrier-Locked Phones</h3>
+        <h3 class="">@Model.Title</h3>
     </div>
     <div class="row mt-3">
-        <p>Sometimes, even when you own a device, you’re still not fully in control of it. Buy a smartphone from one of the big US carriers, and it typically comes locked to that carrier’s network. If you want to take that phone and use it on a different carrier’s network, the process of making that happen can be a real pain. Carriers in the US are required to let you switch networks, and each carrier has its own protocol for “unlocking” your phone to make that possible. Some processes are more cumbersome than others, but in almost all cases, it’s a big annoyance. Luckily, it’s an annoyance that may soon be rendered obsolete. Locking phones was also common in the UK until very recently. But in late October, UK communications regulator Ofcom announced a ban on locked phones, set to take effect by 2021. The United Kingdom joins countries like Singapore and Canada that have also forbidden the practice of selling locked phones. This step is a win for consumer advocates, who have long contended that mobile devices should come unlocked by default. They argue that selling phones unlocked makes it far easier for consumers to switch networks, resell their phones, or even just give them to someone else.</p>
+        <p>@Model.Content</p>
     </div>
-    <div class="row mt-4">
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn border border-dark">
-                <input type="radio" name="A" class="bum" autocomplete="off" onclick="myFunc()"> Active
-            </label>
+    @for (int i = 0; i < Model.ExamQuestions.Count; i+=2)
+    {
+        <div class="row mt-4">
+            <div class="col pr-5 pl-0">
+                <p>@(i+1)) @Model.ExamQuestions[i].Question</p>
+                <ul class="list-unstyled">
+                    <li>
+                        <div class="form-check p-0">
+                            <input class="form-check-input " type="radio" name="A" id="A" value="A" style="display: none;" checked>
+                            <label class="form-check-label border border-dark color@(i+1) pl-4 pr-4 pt-1 pb-1 mb-1" for="A" style="width: 100%">
+                                A) @Model.ExamQuestions[i].OptionA
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check p-0">
+                            <input class="form-check-input " type="radio" name="A" id="B" value="B"  style="display: none;" checked>
+                            <label class="form-check-label border border-dark color@(i+1) pl-4 pr-4 pt-1 pb-1 mb-1" for="B" style="width: 100%">
+                                A) @Model.ExamQuestions[i].OptionB
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check p-0">
+                            <input class="form-check-input " type="radio" name="A" id="C" value="C"  style="display: none;" checked>
+                            <label class="form-check-label border border-dark color@(i+1) pl-4 pr-4 pt-1 pb-1 mb-1" for="C" style="width: 100%">
+                                A) @Model.ExamQuestions[i].OptionC
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check p-0">
+                            <input class="form-check-input " type="radio" name="A" id="D" value="D"  style="display: none;" checked>
+                            <label class="form-check-label border border-dark color@(i+1) pl-4 pr-4 pt-1 pb-1 mb-1" for="D" style="width: 100%">
+                                A) @Model.ExamQuestions[i].OptionD
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+             <div class="col pr-0 pl-5">
+                            <p>@(i+2)) @Model.ExamQuestions[i+1].Question</p>
+                            <ul class="list-unstyled ">
+                                <li>
+                                    <div class="form-check p-0">
+                                        <input class="form-check-input " type="radio" name="A" id="A" value="A"  style="display: none;" checked>
+                                        <label class="form-check-label border border-dark color@(i+2) pl-4 pr-4 pt-1 pb-1 mb-1" for="A" style="width: 100%">
+                                            A) @Model.ExamQuestions[i+1].OptionA
+            
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check p-0">
+                                        <input class="form-check-input " type="radio" name="A" id="B" value="B"  style="display: none;" checked>
+                                        <label class="form-check-label border border-dark color@(i+2) pl-4 pr-4 pt-1 pb-1 mb-1" for="B" style="width: 100%">
+                                            B) @Model.ExamQuestions[i+1].OptionB
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check p-0">
+                                        <input class="form-check-input " type="radio" name="A" id="C" value="C"  style="display: none;" checked>
+                                        <label class="form-check-label border border-dark color@(i+2) pl-4 pr-4 pt-1 pb-1 mb-1" for="C" style="width: 100%">
+                                            C) @Model.ExamQuestions[i+1].OptionC
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check p-0">
+                                        <input class="form-check-input " type="radio" name="A" id="D" value="D"  style="display: none;" checked>
+                                        <label class="form-check-label border border-dark color@(i+2) pl-4 pr-4 pt-1 pb-1 mb-1" for="D" style="width: 100%">
+                                            D) @Model.ExamQuestions[i+1].OptionD
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
         </div>
+    }
+
+
+</div>
+<div class="row pb-5 pt-5">
+    <div class="col-5"></div>
+    <div class="col-2">
+        <button class="btn btn-dark  btn-lg btn-block pt-4 pb-4">SINAVI TAMAMLA</button>
     </div>
+    <div class="col-5"></div>
 </div>
