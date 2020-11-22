@@ -24,9 +24,11 @@ namespace KonusarakOgren.Service.Concrete
         {
             var userCheck = await _userManager.FindByNameAsync(dto.Username);
             if (userCheck==null) return new ServiceResult(){Message = "Kullanıcı mevcut değil."};
+            
             await _signInManager.SignOutAsync();
             var result = await _signInManager.PasswordSignInAsync(userCheck, dto.Password, false, false);
-            if (!result.Succeeded) return new ServiceResult(){Message = "Bir şeyler ters gitti."};
+            
+            if (!result.Succeeded) return new ServiceResult(){Message = "Kullanıcı adı veya şifre yanlış."};
             return new ServiceResult(){Success = result.Succeeded};
         }
 
