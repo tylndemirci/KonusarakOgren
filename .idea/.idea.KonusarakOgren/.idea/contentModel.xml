@@ -205,8 +205,6 @@
           <e p="ExamController.cs" t="Include" />
         </e>
         <e p="konusarakogren.db" t="Include" />
-        <e p="konusarakogren.db-shm" t="Include" />
-        <e p="konusarakogren.db-wal" t="Include" />
         <e p="KonusarakOgren.WebUI.csproj" t="IncludeRecursive" />
         <e p="Migrations" t="Include">
           <e p="20201120120552_Initial.cs" t="Include" />

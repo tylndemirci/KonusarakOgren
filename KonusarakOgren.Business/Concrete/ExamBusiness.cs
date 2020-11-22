@@ -83,7 +83,7 @@ namespace KonusarakOgren.Business.Concrete
             // Makale linkleri toplandı.
             var titleList = new List<string>();
             var contentList = new List<string>();
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 5; i++)
             {
                 var htmlFor = await httpClient.GetStringAsync(links[i]);
 
